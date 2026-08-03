@@ -488,3 +488,6 @@ Verified via full-deck probe (28/28) + timed screenshots of slide 7 at step 1, s
 | CSS | .gfile row + .gf/giFill fill primitive + giSeg pill activation added; giAns now expands max-height/margin; .gireq/.gidate paddings trimmed for the three-date card; reduced-motion shows everything filled; cache-bust ?v=18 |
 
 Verified via full-deck probe (28/28) + timed screenshots of slide 7 across all five panes (rail collapse, typed fields, Final pill, asset+context list, three-date hold with rating chip and green Build). Headless probe burst-throttles the animation clock, so shots are matched by state, not wall time.
+
+### gilead-v1.4.1 · Rail collapse follow-up
+Cal: still too much empty space under the step titles. Root cause beyond v1.4: the rail chip is inline-flex, so even collapsed to zero height it kept a phantom text line box under the title. Chips in the rail are now block-level (`.gistep .chip{display:flex;width:fit-content}`) and the collapse rule also zeroes vertical padding, so every step row is title-thin until its answer generates, then grows. Cache-bust ?v=19. Verified with zoomed rail captures across the pass: active step box hugs the title; answered steps expand.
