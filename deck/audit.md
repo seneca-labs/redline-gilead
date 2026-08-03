@@ -416,3 +416,29 @@ Verified via screenshots: slides 3 and 4 single-line rows (no wraps), slide 8 na
 | Change | Detail |
 |---|---|
 | Footer nav | Cover and agenda regrouped as data-sec="Overview", so the footer reads Overview · Problem · Solution · Redline · Investment; Overview highlights on slides 1-2, Problem starts at slide 3. Supersedes v11.3's no-highlight-on-cover guard (removed). Cache-bust deck.js ?v=16 |
+
+## gilead-v1 · Enterprise conversion (branch redline-gilead)
+
+Converts the Majority agency deck into the Gilead enterprise deck per the "Redline × Gilead — Enterprise Deck Addendum (v7)". Main remains the Majority deck; this branch is the Gilead deck. 28 slides, footer reads Overview · Problem · Solution · Redline · Trust · Investment.
+
+| Change | Detail |
+|---|---|
+| POV shift (§0) | Buyer employs the reviewers: all "learns/predicts reviewers" copy replaced by committee-standards framing ("encodes the committee's standards so every agency submits to them consistently"); reviewer cards became per-committee standards cards; personas are role-based (Agency lead, Gilead admin, fictional Jordan Lee) |
+| Cover + agenda (§2) | Title "Redline · Prepared for Gilead", Wade vendor mark, sub "One review pipeline, every agency, every brand"; agenda gains an 04 Trust stop (Investment becomes 05) |
+| Slide 6 console (§8) | Home mockup is the Gilead console: portfolio stats (24 in flight · 3 agencies, 78% first-pass, 41% fewer malformed), agency rows Majority / Agency B / Agency C + live Portfolio-standard row, portfolio flag trends, portfolio PRC windows, Agencies + Standards nav items |
+| Two views slide (§6) | New centerpiece after the console: agency workspace left, Gilead console right, seam arrows (submission →, ← standard), visible isolation line, landing "Agencies keep their craft. Gilead gets one pipeline." |
+| Guided intake (§3) | Submission screen rebuilt as progressive disclosure: 5-step rail (upload + auto-detect chip, brand/part, concept/final, asset + context, requirements), collapsed answers, requirements payoff card with Build button |
+| Falcon slide (§7) | New, after integrations: "Review and preparation are two halves." — Veeva Falcon MLR named plainly on the review side, Redline on preparation, landing line per brief |
+| Standards screen | src-kb rebuilt as Gilead console Standards: four committee cards with standards counts, portfolio-standards list with live-update row, "standards of the committee, never profiles of your people" |
+| CRC slide (§5) | New, after Standards: "Built for the [CRC — confirm exact name]." — mandate framing sentence + four bullets (one pipeline, encoded standards live instantly, portfolio audit, fewer malformed submissions) |
+| Four seats | Personas slide reworked to four zones: Agency teams, The committee, [CRC], Brand marketing |
+| Trust trio (§4) | MSA slide removed; three Trust-chapter slides added after seats: T1 perimeter diagram + checklist (cloud-agnostic, endpoint TODO), T2 honest-AI mockup + five mechanics ("when it doesn't know, it flags — it never invents" as day-one requirement), T3 Manual/Draft/Staged-auto dial |
+| Rollout (§11) | Replaces Build out: three phases (weeks 1–8 calibration, [CRC] standard live, portfolio) + "What Gilead walks away with" strip |
+| Money slide (§9) | New: one-submission time ledger, [N]/[M] portfolio multiplier with Nikki/Matthew TODO chip, landing "[Platform cost] is less than the [CRC] will spend finding this out manually." |
+| Investment (§10) | Engine/Editor tiers retired. Path 1 Enterprise Pilot $850K · 6 months (franchise, three agencies, Majority as launch agency included, 50% conversion credits, never "POC"); Path 2 Enterprise Platform Year 1 $1.8–2.0M, Y2–3 $1.2M/$1.3M, sized AI capacity, managed operations; expansion strip ($75K + $100K/yr agency, +$200K/yr franchise, $100–250K integrations) |
+| Kill list (§12) | MSA slide, Engine/Editor cards, Editor-tier chap tag, reviewer-prediction copy, launch-partner framing, cloud-vendor assumptions — all removed. Majority appears only as: dashboard rows (§8-sanctioned), Feed agency-of-record tag, launch-agency investment line |
+| TODO markers (§13) | Rendered visibly: [CRC — confirm exact name] ×8, cloud/endpoints TODO (T1), portfolio volumes TODO (money), [Platform cost] |
+| CSS | Gilead block appended to styles.css (.gi*, .tv*, .fal*, .crclist, .peri*, .t1wrap/.t2wrap, .m*, .seatzones.four); cache-bust ?v=15 |
+| Speaker notes | Full rewrite for the enterprise room: never-say-reviewer-prediction rule, CRC training-timing argument on slide 19, trust-chapter scripting, TODO list; red lines pointed to the internal memo, not this folder |
+
+Verified via full-deck headless probe (28/28 slides, nav groups highlight correctly incl. new Trust stop) + screenshots of console, two-views, intake, falcon, CRC, seats, T1–T3, rollout, money, investment. Only 404 is favicon.
