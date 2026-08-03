@@ -465,3 +465,13 @@ Verified via full-deck headless probe (28/28 slides, nav groups highlight correc
 | Speaker notes | Renumbered for the new order; intake, two-views, AWS, rollout, investment sections rewritten; header updated (Gilead naming rule, AWS confirmed); TODO list trimmed to group-name swap + Bedrock model list |
 
 Verified via full-deck headless probe (28/28, nav groups contiguous incl. 4-slide Trust chapter) + screenshots of console (src-sub clone intact), intake, two-views at 15, two-halves seam, Built for Gilead, T1, AWS, rollout, investment. Only 404 is favicon.
+
+## gilead-v1.3 · Intake back to one window, now animated
+
+| Change | Detail |
+|---|---|
+| Guided intake | Cal: "i liked the old slide on 7 more, i wanted the singular window to animate through the 5 steps." The v1.1 single window (appnav + step rail + card) is restored and animated: a one-pass, CSS-only sequence (2.6s per step, ~13s total) where the right pane cycles the five question cards (upload/detect, brand + part, concept/final, context, requirements) while the rail highlight walks down and each answer fades into its step; it holds on the requirements-and-dates card (Submit by Tue Aug 11 · 12:00, PRC review Thu Aug 13). Animation is keyed on .ds.on so it restarts on every slide entry; reduced-motion shows the finished state statically |
+| src-sub clone | id="src-sub" back on the intake window; duplicate id removed from the two-views agency window (slide-6 loop clones the intake window again, as in v1.1) |
+| CSS | .stepflow/.stepcard/.rline/.dline removed; .giflow/.gistep/.gicard/.gireq restored + .gistagewrap/.gipane/.gidate + giStep/giPane keyframes added; pane cards reuse v1.2 bits (.dropz/.sfld/.seg/.fchip/.steprow); cache-bust ?v=17 |
+
+Verified via full-deck probe (28/28) + timed screenshots of slide 7 at step 1, step 3, and the step-5 hold.

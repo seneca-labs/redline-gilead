@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=16">
+<link rel="stylesheet" href="styles.css?v=17">
 </head>
 <body>
 <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
@@ -187,66 +187,91 @@
   </div>
 </section>
 
-<!-- 7 · Guided intake, all five steps -->
+<!-- 7 · Guided intake, one window animating through five steps -->
 <section class="ds" data-sec="Redline">
   <span class="chap">01 · The submission</span>
-  <div class="inner wide">
-    <h2 style="font-size:38px">A guided intake. Five steps, one at a time.</h2>
-    <p class="lead" style="max-width:940px">Upload first. Redline detects the format, asks only what it needs, and answers with the requirements and the dates before anything is built.</p>
-    <div class="stepflow">
-      <div class="stepcard" data-b="1">
-        <span class="stepn">1</span>
-        <b>Upload the asset</b>
-        <div class="stepui">
-          <div class="dropz"><svg class="icl" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 21h14"/></svg><span>kiosk-build.zip</span></div>
-          <span class="chip chip-green sm">Looks like: Kiosk</span>
-          <div class="steprow"><span class="cbtn dark">That's right</span><span class="cbtn">Change</span></div>
-        </div>
-        <small>Anything that prints, renders, or scrolls.</small>
-      </div>
-      <div class="stepcard" data-b="2">
-        <span class="stepn">2</span>
-        <b>Brand and part number</b>
-        <div class="stepui">
-          <div class="sfld"><label>Brand</label><span>HIV prevention</span></div>
-          <div class="sfld"><label>Part number</label><span>US-UNBC-4289</span></div>
-        </div>
-        <small>Typed once. On every page footer after that.</small>
-      </div>
-      <div class="stepcard" data-b="3">
-        <span class="stepn">3</span>
-        <b>Concept or final?</b>
-        <div class="stepui">
-          <div class="seg"><span>Concept</span><span class="onn">Final</span></div>
-          <div class="sfld"><label>Round</label><span>Round 1</span></div>
-        </div>
-        <small>Final runs the full annotation pass.</small>
-      </div>
-      <div class="stepcard" data-b="4">
-        <span class="stepn">4</span>
-        <b>Add what explains it</b>
-        <div class="stepui">
-          <div class="fchip">Kickoff transcript</div>
-          <div class="fchip">Creative brief</div>
-          <div class="fchip">Prior round · PDF</div>
-        </div>
-        <small>The kickoff call is context, not a memory.</small>
-      </div>
-      <div class="stepcard hi" data-b="5">
-        <span class="stepn">5</span>
-        <b>Requirements and dates</b>
-        <div class="stepui">
-          <div class="rline"><svg class="icl"><use href="#i-lcheck"/></svg><p>Annotate every frame</p></div>
-          <div class="rline"><svg class="icl"><use href="#i-lcheck"/></svg><p>ISI holds 4 seconds on scroll</p></div>
-          <div class="rline"><svg class="icl"><use href="#i-lcheck"/></svg><p>Every touch state shown</p></div>
-          <div class="dline"><label>Submit by</label><span>Tue, Aug 11 · 12:00</span></div>
-          <div class="dline"><label>PRC review</label><span>Thu, Aug 13</span></div>
-          <span class="cbtn dark" style="justify-content:center">Build the deck</span>
-        </div>
-        <small>Known before the build starts.</small>
-      </div>
+  <div class="inner split">
+    <div class="stext">
+      <h2>A guided intake. One question at a time.</h2>
+      <p class="lead">Upload first. Redline detects the format, asks only what it needs, and answers with the requirements and the dates before anything is built.</p>
     </div>
-    <p class="whis" style="margin-top:22px">The confusing part of submitting, answered by the system, not by asking around.</p>
+    <div class="sright">
+      <div class="window" id="src-sub" style="width:1030px">
+      <div class="winbar"><span></span><span></span><span></span><em>Redline · Submissions · New</em></div>
+      <div class="app">
+        <nav class="appnav">
+          <div class="applogo">Redline</div>
+          <span class="navlab">Main menu</span>
+          <a><svg class="ic"><use href="#i-grid"/></svg>Home</a>
+          <a class="cur"><svg class="ic"><use href="#i-inbox"/></svg>Submissions</a>
+          <a><svg class="ic"><use href="#i-check"/></svg>Worklist</a>
+          <a><svg class="ic"><use href="#i-folder"/></svg>Clients</a>
+          <a><svg class="ic"><use href="#i-cal"/></svg>Calendar</a>
+          <div class="appuser"><b>AL</b>Agency lead</div>
+        </nav>
+        <div class="appmain">
+          <div class="greet">
+            <div><b>New submission</b><span>One question at a time. Each answer unlocks the next.</span></div>
+            <div class="side2"><span class="cbtn">Save as draft</span><span class="cbtn dark">Build deck</span></div>
+          </div>
+          <div class="giflow">
+            <div class="gisteps">
+              <div class="gistep g1"><i>1</i><div><b>What are you submitting?</b><small>kiosk-build.zip uploaded</small><span class="chip chip-green sm">Looks like: Kiosk · confirmed</span></div></div>
+              <div class="gistep g2"><i>2</i><div><b>Brand and part number</b><small>HIV prevention franchise</small><span class="chip chip-nt sm">US-UNBC-4289</span></div></div>
+              <div class="gistep g3"><i>3</i><div><b>Concept or final?</b><small>Final · full annotation pass</small></div></div>
+              <div class="gistep g4"><i>4</i><div><b>The asset, and what explains it</b><small>Transcript, brief, prior round</small></div></div>
+              <div class="gistep g5"><i>5</i><div><b>Requirements and dates</b><small>from your own history</small></div></div>
+            </div>
+            <div class="gistagewrap">
+              <div class="gipane p1">
+                <div class="gicard">
+                  <div class="gicardhead"><b>What are you submitting?</b><span>Drop it in. Redline detects the format.</span></div>
+                  <div class="dropz" style="margin-top:12px"><svg class="icl" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 21h14"/></svg><span>kiosk-build.zip</span></div>
+                  <div class="steprow" style="margin-top:11px;align-items:center"><span class="chip chip-green sm">Looks like: Kiosk</span><span class="cbtn dark" style="margin-left:auto">That's right</span><span class="cbtn">Change</span></div>
+                </div>
+              </div>
+              <div class="gipane p2">
+                <div class="gicard">
+                  <div class="gicardhead"><b>Brand and part number</b><span>Typed once. On every page footer after that.</span></div>
+                  <div class="sfld" style="margin-top:12px"><label>Brand</label><span>HIV prevention</span></div>
+                  <div class="sfld" style="margin-top:8px"><label>Part number</label><span>US-UNBC-4289</span></div>
+                </div>
+              </div>
+              <div class="gipane p3">
+                <div class="gicard">
+                  <div class="gicardhead"><b>Concept or final?</b><span>Final runs the full annotation pass.</span></div>
+                  <div class="seg" style="margin-top:12px"><span>Concept</span><span class="onn">Final</span></div>
+                  <div class="sfld" style="margin-top:8px"><label>Round</label><span>Round 1</span></div>
+                </div>
+              </div>
+              <div class="gipane p4">
+                <div class="gicard">
+                  <div class="gicardhead"><b>Add what explains it</b><span>The kickoff call is context, not a memory.</span></div>
+                  <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px">
+                    <div class="fchip">Kickoff transcript</div>
+                    <div class="fchip">Creative brief</div>
+                    <div class="fchip">Prior round · PDF</div>
+                  </div>
+                </div>
+              </div>
+              <div class="gipane p5">
+                <div class="gicard">
+                  <div class="gicardhead"><b>Here's what this format needs</b><span>Kiosk · from your submission history and encoded standards</span></div>
+                  <div class="gireq"><svg class="icl"><use href="#i-lcheck"/></svg><p>Annotate claims, functionality, and clickability on every frame</p></div>
+                  <div class="gireq"><svg class="icl"><use href="#i-lcheck"/></svg><p>ISI hold timing stated per frame, 4 seconds on scroll</p></div>
+                  <div class="gireq"><svg class="icl"><use href="#i-lcheck"/></svg><p>Every touch state shown, at the granularity the committee reviews</p></div>
+                  <div class="gidate"><label>Submit by</label><b>Tue, Aug 11 · 12:00</b></div>
+                  <div class="gidate"><label>PRC review</label><b>Thu, Aug 13</b></div>
+                  <div class="gireqfoot"><span>Known before the build starts.</span><span class="cbtn dark">Build</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <p class="whis">The confusing part of submitting, answered by the system, not by asking around.</p>
+    </div>
   </div>
 </section>
 
@@ -737,7 +762,7 @@
     <h2 style="font-size:40px">Two views. One pipeline.</h2>
     <div class="tvgrid">
       <div class="tvside" data-b="1">
-        <div class="window" id="src-sub" style="width:100%">
+        <div class="window" style="width:100%">
           <div class="winbar"><span></span><span></span><span></span><em>Redline · Agency workspace</em></div>
           <div class="tvpanel">
             <div class="greet" style="padding:14px 18px 8px"><div><b>Your submissions</b><span>Yours only · isolated knowledge base</span></div></div>

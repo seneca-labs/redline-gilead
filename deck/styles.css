@@ -1081,34 +1081,69 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 
 /* ================= Gilead branch (v1) ================= */
 
-/* guided intake · five steps (v1.2) */
-.stepflow{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:26px;align-items:stretch}
-.stepcard{display:flex;flex-direction:column;gap:10px;background:var(--surface);border:1px solid var(--hairline-2);border-radius:16px;padding:18px 16px 15px;box-shadow:0 8px 20px rgba(0,0,0,.04)}
-.stepcard.hi{background:var(--paper);border-color:var(--hairline-4);box-shadow:0 12px 28px rgba(0,0,0,.07)}
-.stepn{display:flex;flex-shrink:0;width:24px;height:24px;border-radius:999px;background:var(--pill-sage-bg);color:var(--pill-sage-tx);font-size:11.5px;font-weight:800;align-items:center;justify-content:center}
-.stepcard.hi .stepn{background:var(--ink);color:var(--surface)}
-.stepcard>b{font-size:14.5px;font-weight:800;letter-spacing:-.01em;line-height:1.3}
-.stepui{display:flex;flex-direction:column;gap:8px;flex:1}
-.stepcard>small{font-size:10.5px;color:var(--faint);line-height:1.45;margin-top:4px}
+/* guided intake · one window animating through five steps (v1.3) */
+.giflow{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1.12fr}
+.gisteps{padding:12px 8px 12px 18px;border-right:1px solid var(--hairline);display:flex;flex-direction:column;justify-content:center;gap:3px}
+.gistep{display:flex;gap:11px;align-items:flex-start;padding:8px 12px;border-radius:12px;border:1px solid transparent;opacity:.55}
+.gistep i{font-style:normal;flex-shrink:0;display:flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:999px;background:var(--pill-sage-bg);color:var(--pill-sage-tx);font-size:11px;font-weight:800;margin-top:1px}
+.gistep b{display:block;font-size:12.5px;font-weight:700;color:var(--ink-soft);letter-spacing:-.01em}
+.gistep small{display:block;font-size:10.5px;color:var(--faint);margin-top:2px}
+.gistep .chip{margin-top:6px}
+.gistep small,.gistep .chip{opacity:0}
+.gistagewrap{position:relative}
+.gipane{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:12px 22px;opacity:0}
+.gicard{background:var(--paper);border:1px solid var(--hairline-2);border-radius:14px;padding:15px 18px;box-shadow:0 8px 24px rgba(0,0,0,.06);width:100%;max-width:440px}
+.gicardhead{padding-bottom:9px;border-bottom:1px solid var(--hairline)}
+.gicardhead b{display:block;font-size:14px;font-weight:800;letter-spacing:-.01em}
+.gicardhead span{display:block;font-size:10.5px;color:var(--faint);margin-top:2px}
+.gireq{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--hairline)}
+.gireq .icl{width:13px;height:13px;color:var(--pill-sage-tx);margin-top:2px}
+.gireq p{font-size:12px;color:var(--ink-2);font-weight:600;line-height:1.45}
+.gidate{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:8px 0;border-bottom:1px solid var(--hairline)}
+.gidate label{font-size:11px;font-weight:700;color:var(--faint)}
+.gidate b{font-size:12px;font-weight:800;color:var(--ink-soft);white-space:nowrap}
+.gireqfoot{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:11px}
+.gireqfoot>span:first-child{font-size:11px;color:var(--muted);line-height:1.4}
 .dropz{display:flex;flex-direction:column;align-items:center;gap:6px;border:1.5px dashed var(--hairline-4);border-radius:12px;padding:13px 10px;background:var(--wash)}
 .dropz .icl{width:15px;height:15px;color:var(--ink-4)}
 .dropz span{font-size:11px;font-weight:700;color:var(--ink-2)}
 .steprow{display:flex;gap:6px}
 .steprow .cbtn{font-size:10.5px;padding:4px 11px}
-.sfld{display:flex;flex-direction:column;gap:3px;border:1px solid var(--hairline-2);border-radius:10px;padding:7px 11px;background:var(--chrome)}
+.sfld{display:flex;flex-direction:column;gap:3px;border:1px solid var(--hairline-2);border-radius:10px;padding:7px 11px;background:var(--surface)}
 .sfld label{font-size:9.5px;font-weight:700;color:var(--faint)}
 .sfld span{font-size:12px;font-weight:700;color:var(--ink-soft)}
-.seg{display:flex;border:1px solid var(--hairline-2);border-radius:999px;padding:3px;background:var(--chrome)}
+.seg{display:flex;border:1px solid var(--hairline-2);border-radius:999px;padding:3px;background:var(--surface)}
 .seg span{flex:1;text-align:center;font-size:11px;font-weight:700;color:var(--ink-4);border-radius:999px;padding:4px 0}
 .seg span.onn{background:var(--ink);color:var(--surface)}
 .fchip{display:flex;align-items:center;font-size:11px;font-weight:700;color:var(--ink-2);border:1px solid var(--hairline-2);border-radius:999px;padding:6px 12px;background:var(--surface);width:fit-content}
-.rline{display:flex;gap:7px;align-items:flex-start}
-.rline .icl{width:12px;height:12px;color:var(--pill-sage-tx);margin-top:2px}
-.rline p{font-size:11.5px;font-weight:600;color:var(--ink-2);line-height:1.4}
-.dline{display:flex;justify-content:space-between;align-items:baseline;gap:8px;border-top:1px solid var(--hairline);padding-top:7px}
-.dline label{font-size:10px;font-weight:700;color:var(--faint)}
-.dline span{font-size:11.5px;font-weight:800;color:var(--ink-soft);white-space:nowrap}
-.stepui>.cbtn.dark{margin-top:4px;font-size:11px;padding:5px 12px}
+/* one pass, 2.6s per step, holds on the requirements card */
+.ds.on .gistep.g1{animation:giStep 2.6s linear 0s both}
+.ds.on .gistep.g2{animation:giStep 2.6s linear 2.6s both}
+.ds.on .gistep.g3{animation:giStep 2.6s linear 5.2s both}
+.ds.on .gistep.g4{animation:giStep 2.6s linear 7.8s both}
+.ds.on .gistep.g5{animation:giStepHold 2.6s linear 10.4s both}
+.ds.on .gistep.g1 small,.ds.on .gistep.g1 .chip{animation:giAns .5s cubic-bezier(.22,1,.36,1) 2.6s both}
+.ds.on .gistep.g2 small,.ds.on .gistep.g2 .chip{animation:giAns .5s cubic-bezier(.22,1,.36,1) 5.2s both}
+.ds.on .gistep.g3 small{animation:giAns .5s cubic-bezier(.22,1,.36,1) 7.8s both}
+.ds.on .gistep.g4 small{animation:giAns .5s cubic-bezier(.22,1,.36,1) 10.4s both}
+.ds.on .gistep.g5 small{animation:giAns .5s cubic-bezier(.22,1,.36,1) 10.9s both}
+.ds.on .gipane.p1{animation:giPane 2.6s linear 0s both}
+.ds.on .gipane.p2{animation:giPane 2.6s linear 2.6s both}
+.ds.on .gipane.p3{animation:giPane 2.6s linear 5.2s both}
+.ds.on .gipane.p4{animation:giPane 2.6s linear 7.8s both}
+.ds.on .gipane.p5{animation:giPaneHold 2.6s linear 10.4s both}
+@keyframes giStep{0%,6%{opacity:.55;background:transparent;border-color:transparent;box-shadow:none}14%,86%{opacity:1;background:var(--paper);border-color:var(--hairline-2);box-shadow:0 4px 12px rgba(0,0,0,.05)}100%{opacity:.85;background:transparent;border-color:transparent;box-shadow:none}}
+@keyframes giStepHold{0%,6%{opacity:.55;background:transparent;border-color:transparent;box-shadow:none}14%,100%{opacity:1;background:var(--paper);border-color:var(--hairline-2);box-shadow:0 4px 12px rgba(0,0,0,.05)}}
+@keyframes giAns{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:none}}
+@keyframes giPane{0%,6%{opacity:0}16%,86%{opacity:1}96%,100%{opacity:0}}
+@keyframes giPaneHold{0%,6%{opacity:0}16%,100%{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .gistep,.gipane,.gistep small,.gistep .chip{animation:none!important}
+  .gistep{opacity:.85}
+  .gistep small,.gistep .chip{opacity:1}
+  .gistep.g5{opacity:1;background:var(--paper);border-color:var(--hairline-2)}
+  .gipane.p5{opacity:1}
+}
 
 /* two views, one pipeline (brief §6) */
 .tvgrid{display:grid;grid-template-columns:1fr 156px 1fr;align-items:stretch;margin-top:24px}

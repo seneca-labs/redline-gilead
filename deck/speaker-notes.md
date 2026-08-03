@@ -28,8 +28,8 @@ The submission, the review, the round. Bridge: "everything you're about to see i
 ## 6 · What Redline is (Gilead console)
 The mockup is the Gilead console, not an agency tool: portfolio view, three agencies, first-pass approval, fewer malformed submissions reaching review. Point at the "Portfolio standard · Live" row: one update, live at all three agencies, same day. Read the boundary strip out loud: Redline prepares, your teams review, a named human approves, Veeva remains the system of record.
 
-## 7 · A guided intake, five steps
-All five steps on one slide, left to right, painfully simple: upload it, name it, concept or final, add what explains it, and the system answers. Walk the row once with a finger. The fifth card is the payoff and it's the one with the dates: requirements, the Aug 11 cutoff, the Aug 13 review — known before the build starts. This is what "fewer malformed submissions" looks like at the point of entry.
+## 7 · A guided intake
+The window animates itself: one question at a time, the answer files into the rail, the next question appears. Let it run — it takes about 13 seconds and lands on the payoff card and stays there: requirements from Gilead's own history, the Aug 11 cutoff, the Aug 13 review, known before the build starts. Don't talk over the first pass; narrate the landing. This is what "fewer malformed submissions" looks like at the point of entry.
 
 ## 8 · Redline builds the deck
 The canvas is the real Care For The Culture postcard page from the Feed campaign — Gilead's own program, Majority as agency of record. That's the one proof slide; it's factual, not a partnership pitch. Granularity story stays: every beat of the asset, at the granularity the committee reviews it.
