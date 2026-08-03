@@ -144,6 +144,7 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .greet .side2{display:flex;gap:8px;align-items:center}
 .cbtn{display:inline-flex;align-items:center;background:var(--surface);border:1px solid var(--hairline-3);border-radius:999px;padding:4px 12px;font-size:11.5px;font-weight:600;color:var(--ink-soft);white-space:nowrap}
 .cbtn.dark{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.cbtn.grn{background:var(--pill-sage-tx);color:var(--surface);border-color:transparent}
 .raillab{display:block;font-size:12px;font-weight:700;color:var(--ink-soft);margin-bottom:8px}
 .raillab.mt{margin-top:16px}
 .flagrow{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;font-weight:500;padding:8px 0;border-bottom:1px solid var(--wash)}
@@ -1087,19 +1088,18 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .gistep{display:flex;gap:11px;align-items:flex-start;padding:8px 12px;border-radius:12px;border:1px solid transparent;opacity:.55}
 .gistep i{font-style:normal;flex-shrink:0;display:flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:999px;background:var(--pill-sage-bg);color:var(--pill-sage-tx);font-size:11px;font-weight:800;margin-top:1px}
 .gistep b{display:block;font-size:12.5px;font-weight:700;color:var(--ink-soft);letter-spacing:-.01em}
-.gistep small{display:block;font-size:10.5px;color:var(--faint);margin-top:2px}
-.gistep .chip{margin-top:6px}
-.gistep small,.gistep .chip{opacity:0}
+.gistep small{display:block;font-size:10.5px;color:var(--faint)}
+.gistep small,.gistep .chip{opacity:0;max-height:0;margin-top:0;overflow:hidden}
 .gistagewrap{position:relative}
 .gipane{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:12px 22px;opacity:0}
 .gicard{background:var(--paper);border:1px solid var(--hairline-2);border-radius:14px;padding:15px 18px;box-shadow:0 8px 24px rgba(0,0,0,.06);width:100%;max-width:440px}
 .gicardhead{padding-bottom:9px;border-bottom:1px solid var(--hairline)}
 .gicardhead b{display:block;font-size:14px;font-weight:800;letter-spacing:-.01em}
 .gicardhead span{display:block;font-size:10.5px;color:var(--faint);margin-top:2px}
-.gireq{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--hairline)}
+.gireq{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--hairline)}
 .gireq .icl{width:13px;height:13px;color:var(--pill-sage-tx);margin-top:2px}
 .gireq p{font-size:12px;color:var(--ink-2);font-weight:600;line-height:1.45}
-.gidate{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:8px 0;border-bottom:1px solid var(--hairline)}
+.gidate{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:6.5px 0;border-bottom:1px solid var(--hairline)}
 .gidate label{font-size:11px;font-weight:700;color:var(--faint)}
 .gidate b{font-size:12px;font-weight:800;color:var(--ink-soft);white-space:nowrap}
 .gireqfoot{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:11px}
@@ -1111,38 +1111,50 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .steprow .cbtn{font-size:10.5px;padding:4px 11px}
 .sfld{display:flex;flex-direction:column;gap:3px;border:1px solid var(--hairline-2);border-radius:10px;padding:7px 11px;background:var(--surface)}
 .sfld label{font-size:9.5px;font-weight:700;color:var(--faint)}
-.sfld span{font-size:12px;font-weight:700;color:var(--ink-soft)}
+.sfld span{font-size:12px;font-weight:700;color:var(--ink-soft);min-height:15px}
 .seg{display:flex;border:1px solid var(--hairline-2);border-radius:999px;padding:3px;background:var(--surface)}
 .seg span{flex:1;text-align:center;font-size:11px;font-weight:700;color:var(--ink-4);border-radius:999px;padding:4px 0}
 .seg span.onn{background:var(--ink);color:var(--surface)}
 .fchip{display:flex;align-items:center;font-size:11px;font-weight:700;color:var(--ink-2);border:1px solid var(--hairline-2);border-radius:999px;padding:6px 12px;background:var(--surface);width:fit-content}
-/* one pass, 2.6s per step, holds on the requirements card */
-.ds.on .gistep.g1{animation:giStep 2.6s linear 0s both}
-.ds.on .gistep.g2{animation:giStep 2.6s linear 2.6s both}
-.ds.on .gistep.g3{animation:giStep 2.6s linear 5.2s both}
-.ds.on .gistep.g4{animation:giStep 2.6s linear 7.8s both}
-.ds.on .gistep.g5{animation:giStepHold 2.6s linear 10.4s both}
-.ds.on .gistep.g1 small,.ds.on .gistep.g1 .chip{animation:giAns .5s cubic-bezier(.22,1,.36,1) 2.6s both}
-.ds.on .gistep.g2 small,.ds.on .gistep.g2 .chip{animation:giAns .5s cubic-bezier(.22,1,.36,1) 5.2s both}
-.ds.on .gistep.g3 small{animation:giAns .5s cubic-bezier(.22,1,.36,1) 7.8s both}
-.ds.on .gistep.g4 small{animation:giAns .5s cubic-bezier(.22,1,.36,1) 10.4s both}
-.ds.on .gistep.g5 small{animation:giAns .5s cubic-bezier(.22,1,.36,1) 10.9s both}
-.ds.on .gipane.p1{animation:giPane 2.6s linear 0s both}
-.ds.on .gipane.p2{animation:giPane 2.6s linear 2.6s both}
-.ds.on .gipane.p3{animation:giPane 2.6s linear 5.2s both}
-.ds.on .gipane.p4{animation:giPane 2.6s linear 7.8s both}
-.ds.on .gipane.p5{animation:giPaneHold 2.6s linear 10.4s both}
+.gfile{display:flex;align-items:center;gap:9px;border:1px solid var(--hairline-2);border-radius:10px;padding:8px 11px;background:var(--surface);margin-top:8px}
+.gfile .icl{width:13px;height:13px;color:var(--ink-4);flex-shrink:0}
+.gfile b{font-size:11.5px;font-weight:700;color:var(--ink-soft);flex:1}
+.gfile small{font-size:10px;color:var(--faint)}
+/* one pass, 4.5s per step, fields fill in as it goes, holds on the requirements card */
+.gf{opacity:0}
+.ds.on .gf{animation:giFill .45s cubic-bezier(.22,1,.36,1) both}
+.ds.on .seg .onn{animation:giSeg .4s ease both}
+.ds.on .gistep.g1{animation:giStep 4.5s linear 0s both}
+.ds.on .gistep.g2{animation:giStep 4.5s linear 4.5s both}
+.ds.on .gistep.g3{animation:giStep 4.5s linear 9s both}
+.ds.on .gistep.g4{animation:giStep 4.5s linear 13.5s both}
+.ds.on .gistep.g5{animation:giStepHold 4.5s linear 18s both}
+.ds.on .gistep.g1 small,.ds.on .gistep.g1 .chip{animation:giAns .5s cubic-bezier(.22,1,.36,1) 4.5s both}
+.ds.on .gistep.g2 small,.ds.on .gistep.g2 .chip{animation:giAns .5s cubic-bezier(.22,1,.36,1) 9s both}
+.ds.on .gistep.g3 small{animation:giAns .5s cubic-bezier(.22,1,.36,1) 13.5s both}
+.ds.on .gistep.g4 small{animation:giAns .5s cubic-bezier(.22,1,.36,1) 18s both}
+.ds.on .gistep.g5 small{animation:giAns .5s cubic-bezier(.22,1,.36,1) 18.8s both}
+.ds.on .gipane.p1{animation:giPane 4.5s linear 0s both}
+.ds.on .gipane.p2{animation:giPane 4.5s linear 4.5s both}
+.ds.on .gipane.p3{animation:giPane 4.5s linear 9s both}
+.ds.on .gipane.p4{animation:giPane 4.5s linear 13.5s both}
+.ds.on .gipane.p5{animation:giPaneHold 4.5s linear 18s both}
 @keyframes giStep{0%,6%{opacity:.55;background:transparent;border-color:transparent;box-shadow:none}14%,86%{opacity:1;background:var(--paper);border-color:var(--hairline-2);box-shadow:0 4px 12px rgba(0,0,0,.05)}100%{opacity:.85;background:transparent;border-color:transparent;box-shadow:none}}
 @keyframes giStepHold{0%,6%{opacity:.55;background:transparent;border-color:transparent;box-shadow:none}14%,100%{opacity:1;background:var(--paper);border-color:var(--hairline-2);box-shadow:0 4px 12px rgba(0,0,0,.05)}}
-@keyframes giAns{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:none}}
+@keyframes giAns{from{opacity:0;max-height:0;margin-top:0;transform:translateY(3px)}to{opacity:1;max-height:44px;margin-top:5px;transform:none}}
 @keyframes giPane{0%,6%{opacity:0}16%,86%{opacity:1}96%,100%{opacity:0}}
 @keyframes giPaneHold{0%,6%{opacity:0}16%,100%{opacity:1}}
+@keyframes giFill{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@keyframes giSeg{from{background:transparent;color:var(--ink-4)}to{background:var(--ink);color:var(--surface)}}
 @media (prefers-reduced-motion:reduce){
-  .gistep,.gipane,.gistep small,.gistep .chip{animation:none!important}
+  .gistep,.gipane,.gistep small,.gistep .chip,.gf,.seg .onn{animation:none!important}
   .gistep{opacity:.85}
-  .gistep small,.gistep .chip{opacity:1}
+  .gistep small,.gistep .chip{opacity:1;max-height:none;overflow:visible}
+  .gistep small{margin-top:2px}
+  .gistep .chip{margin-top:6px}
   .gistep.g5{opacity:1;background:var(--paper);border-color:var(--hairline-2)}
   .gipane.p5{opacity:1}
+  .gf{opacity:1}
 }
 
 /* two views, one pipeline (brief §6) */

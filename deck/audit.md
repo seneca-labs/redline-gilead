@@ -475,3 +475,16 @@ Verified via full-deck headless probe (28/28, nav groups contiguous incl. 4-slid
 | CSS | .stepflow/.stepcard/.rline/.dline removed; .giflow/.gistep/.gicard/.gireq restored + .gistagewrap/.gipane/.gidate + giStep/giPane keyframes added; pane cards reuse v1.2 bits (.dropz/.sfld/.seg/.fchip/.steprow); cache-bust ?v=17 |
 
 Verified via full-deck probe (28/28) + timed screenshots of slide 7 at step 1, step 3, and the step-5 hold.
+
+## gilead-v1.4 · Intake fills itself out
+
+| Change | Detail |
+|---|---|
+| Filling, not pre-filled | Cal: "it needs to show stuff getting filled out." Each pane now performs its step: pane 1 the dropzone reads "Drop the asset here," then kiosk-build.zip (84 MB) files in and the Looks-like chip + confirm buttons appear; pane 2 Brand and Part number type themselves (deck.js typer, data-type); pane 3 the Final pill activates and Round 1 types; pane 5 requirement rows and dates stagger in |
+| Pane 4 simplified | Cal: "#4 is crucial... needs to be simpler while also showing someone uploading an asset, the context around it." Now a single list: kiosk-build.zip tagged "The asset" (green chip, present from pane start), then Kickoff transcript / Creative brief / Prior round · PDF each filing in tagged "Context" (.gfile rows). Rail g4 answer: "Asset + transcript, brief, prior round" |
+| Launch date + rating | Third date row on the payoff card: Launch · Mon, Aug 17 with a yellow "4 days after review" chip, so the PRC-review-to-go-live relationship is visible. Foot line: "The whole path to launch, before the build starts." Build button is now green (.cbtn.grn on --pill-sage-tx) |
+| Rail whitespace | Cal: "the white space looks horrible." Rail answers (small + chip) were opacity-hidden but held their height, leaving the active step box mostly empty. They now collapse (max-height:0, margin-top:0, overflow:hidden) and expand as part of giAns, so each step box hugs its title until the answer actually files in |
+| Slower pass | Cal: "the entire animation can be slower." 2.6s → 4.5s per step; delays 0/4.5/9/13.5/18s, ~23s total, still one pass holding on the payoff card; all fill delays (.gf inline animation-delay, typer tdelay) rescaled to the 4.5s grid |
+| CSS | .gfile row + .gf/giFill fill primitive + giSeg pill activation added; giAns now expands max-height/margin; .gireq/.gidate paddings trimmed for the three-date card; reduced-motion shows everything filled; cache-bust ?v=18 |
+
+Verified via full-deck probe (28/28) + timed screenshots of slide 7 across all five panes (rail collapse, typed fields, Final pill, asset+context list, three-date hold with rating chip and green Build). Headless probe burst-throttles the animation clock, so shots are matched by state, not wall time.
