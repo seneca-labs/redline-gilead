@@ -448,3 +448,20 @@ Verified via full-deck headless probe (28/28 slides, nav groups highlight correc
 | Change | Detail |
 |---|---|
 | Two-halves slide | "Review · Veeva Falcon MLR" pill softened to "Review · Veeva" — the room may not be thinking of Falcon, so the slide speaks to Redline and Veeva as a whole while the rows cover Falcon's territory implicitly (routing, review, approval, system of record). Falcon is now a spoken-only answer, and only if they raise it (notes §16) |
+
+## gilead-v1.2 · Revision round: Gilead naming, intake rebuild, AWS trust, timeline
+
+| Change | Detail |
+|---|---|
+| CRC → Gilead | All [CRC — confirm exact name] / [CRC] placeholders replaced with "Gilead" per Cal ("Just say Gilead instead of CRC for now"): headline "Built for Gilead.", standards live-update rows, seats zone, T2 source chip, rollout phase 2, investment bullet. Exact group name tracked in notes as a later swap-in |
+| Guided intake rebuilt | Progressive-disclosure rail replaced by all five steps visible at once (.stepflow): upload + detect chip + confirm, brand/part fields, concept/final toggle, context chips, and a highlighted requirements-and-dates card (Submit by Tue Aug 11 · 12:00, PRC review Thu Aug 13, Build the deck). "Painfully simple," dates on-slide |
+| Two views moved | Centerpiece relocated from slide 7 to slide 15, after integrations, before the two-halves slide ("two views one pipeline should go after slide 15"). Agency window carries id="src-sub" so the slide-6 console loop keeps its clone source. Caption width narrowed to kill a one-word wrap |
+| Two-halves seam | "the submission" label removed from the seam (one-word-line rule); replaced by an arrow glyph. Landing line shortened so "including Veeva." no longer wraps alone |
+| T1 AWS-ified | Cloud confirmed as AWS: perimeter label now "your AWS account, your approved model endpoints", checklist row "Runs in your AWS account", cloud/endpoint TODO chip removed |
+| New AWS architecture slide | Trust 2 of 4, after T1: dashed VPC (Gilead AWS account · private VPC · no public internet path) containing Agency workspace (IAM + SSO) → Redline (private subnets, per-agency S3, one KMS key each) → Amazon Bedrock (PrivateLink, zero retention/training) → Staged output (named human), with Veeva outside the AI path; fact chips (VPC, no training, KMS isolation, CloudTrail); landing "AI you govern like infrastructure, not a service you send data to." |
+| Rollout as timeline | .jobs icon layout (duplicate of T3's) replaced by a dot-and-rail timeline: Weeks 1–8 Implementation, From week 9 The Gilead standard, As you grow The portfolio (open dot); walk-away strip kept |
+| Money slide removed | Slide 26 deleted with its [N]/[M] multiplier, Nikki/Matthew TODO, and "[Platform cost]…" landing line; ROI is a spoken whiteboard exercise (notes §27). Deck stays 28 slides (money out, AWS in) |
+| CSS | Orphaned .gi* intake and .m* money blocks removed; .stepflow/.stepcard, .tline timeline, .aws* blocks added; .falseam span → icon; intake fields use .sfld (base .fld already taken); cache-bust ?v=16 |
+| Speaker notes | Renumbered for the new order; intake, two-views, AWS, rollout, investment sections rewritten; header updated (Gilead naming rule, AWS confirmed); TODO list trimmed to group-name swap + Bedrock model list |
+
+Verified via full-deck headless probe (28/28, nav groups contiguous incl. 4-slide Trust chapter) + screenshots of console (src-sub clone intact), intake, two-views at 15, two-halves seam, Built for Gilead, T1, AWS, rollout, investment. Only 404 is favicon.
