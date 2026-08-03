@@ -1078,3 +1078,93 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 @keyframes sbSheen{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
 @keyframes btnPress{0%,100%{transform:scale(1)}45%{transform:scale(.95)}}
 @keyframes sbSpin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+/* ================= Gilead branch (v1) ================= */
+
+/* guided intake (brief §3) */
+.giflow{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1.12fr}
+.gisteps{padding:12px 8px 12px 18px;border-right:1px solid var(--hairline);display:flex;flex-direction:column;justify-content:center;gap:3px}
+.gistep{display:flex;gap:11px;align-items:flex-start;padding:8px 12px;border-radius:12px;border:1px solid transparent;opacity:.72}
+.gistep i{font-style:normal;flex-shrink:0;display:flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:999px;background:var(--pill-sage-bg);color:var(--pill-sage-tx);font-size:11px;font-weight:800;margin-top:1px}
+.gistep b{display:block;font-size:12.5px;font-weight:700;color:var(--ink-soft);letter-spacing:-.01em}
+.gistep small{display:block;font-size:10.5px;color:var(--faint);margin-top:2px}
+.gistep .chip{margin-top:6px}
+.gistep.now{opacity:1;background:var(--paper);border-color:var(--hairline-2);box-shadow:0 4px 12px rgba(0,0,0,.05)}
+.gistep.now i{background:var(--ink);color:var(--surface)}
+.gicard{margin:14px 20px;align-self:center;background:var(--paper);border:1px solid var(--hairline-2);border-radius:14px;padding:15px 18px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.gicardhead{padding-bottom:9px;border-bottom:1px solid var(--hairline)}
+.gicardhead b{display:block;font-size:14px;font-weight:800;letter-spacing:-.01em}
+.gicardhead span{display:block;font-size:10.5px;color:var(--faint);margin-top:2px}
+.gireq{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--hairline)}
+.gireq .icl{width:13px;height:13px;color:var(--pill-sage-tx);margin-top:2px}
+.gireq p{font-size:12px;color:var(--ink-2);font-weight:600;line-height:1.45}
+.gireqfoot{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:11px}
+.gireqfoot>span:first-child{font-size:11px;color:var(--muted);line-height:1.4}
+
+/* two views, one pipeline (brief §6) */
+.tvgrid{display:grid;grid-template-columns:1fr 156px 1fr;align-items:stretch;margin-top:24px}
+.tvside{display:flex;flex-direction:column}
+.tvside .window{margin:0}
+.tvpanel{background:var(--surface)}
+.tvpanel .drow{grid-template-columns:1.2fr 96px 1fr}
+.tvtags{display:flex;flex-wrap:wrap;gap:6px;padding:2px 18px 16px}
+.tvtags span{font-size:10.5px;font-weight:600;color:var(--ink-4);border:1px solid var(--hairline-2);background:var(--chrome);border-radius:999px;padding:3px 10px}
+.tvcap{font-size:13px;color:var(--muted);line-height:1.5;margin-top:12px;font-weight:500;max-width:440px}
+.tvseam{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:0 8px 40px}
+.tvseam>i{width:1px;height:34px;background:var(--hairline-4)}
+.tvflow{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--ink-4);text-align:center}
+.tvflow .icl{width:20px;height:20px;color:var(--ghost)}
+.tviso{margin-top:20px;padding-top:16px;border-top:1px solid var(--hairline-2);font-size:13.5px;font-weight:600;color:var(--ink-4)}
+
+/* four seats (brief §0/§5) */
+.seatzones.four{grid-template-columns:repeat(4,1fr);gap:40px}
+.seatzones.four .seatzone b{font-size:22px}
+.seatzones.four .seatzone p{font-size:13.5px}
+.seatzone:nth-child(4) i{background:var(--pill-rose-bg);color:var(--pill-rose-tx)}
+
+/* falcon halves (brief §7) */
+.falv{display:grid;grid-template-columns:1fr 140px 1fr;align-items:start;margin-top:28px}
+.falside{display:flex;flex-direction:column}
+.falside h5{display:inline-flex;width:fit-content;font-size:11.5px;font-weight:700;border-radius:999px;padding:5px 14px;margin-bottom:14px}
+.falside h5.pu{background:var(--pill-lavender-bg);color:var(--pill-lavender-tx)}
+.falside h5.sg{background:var(--pill-sage-bg);color:var(--pill-sage-tx)}
+.falbig{font-size:21px;font-weight:800;letter-spacing:-.02em;color:var(--ink-soft);margin-bottom:10px}
+.falside .becomerow{padding:12px 2px}
+.falside .becomerow p{font-size:14px}
+.falseam{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;align-self:stretch;padding-top:8px}
+.falseam i{width:1px;height:64px;background:var(--hairline-4)}
+.falseam span{font-size:11px;font-weight:700;color:var(--faint)}
+
+/* built for the CRC (brief §5) */
+.crclist{margin-top:24px;max-width:960px}
+.crclist .becomerow{padding:15px 2px;align-items:flex-start}
+.crclist .becomerow .icl{width:18px;height:18px;color:var(--pill-sage-tx);margin-top:3px}
+.crclist .becomerow p{font-size:17px;color:var(--ink-2);font-weight:600;line-height:1.5}
+
+/* trust T1 · perimeter (brief §4) */
+.t1wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:60px;margin-top:26px;align-items:center}
+.peri{border:1.5px dashed var(--hairline-4);border-radius:20px;padding:22px 24px 20px;background:var(--wash)}
+.perilab{font-size:12.5px;font-weight:800;color:var(--ink-4);margin-bottom:16px;letter-spacing:-.01em}
+.periin{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.peribox{background:var(--surface);border:1px solid var(--hairline-2);border-radius:14px;padding:16px 15px;box-shadow:0 6px 16px rgba(0,0,0,.05)}
+.peribox b{display:block;font-size:14px;font-weight:800;letter-spacing:-.01em}
+.peribox small{display:block;font-size:10.5px;color:var(--muted);margin-top:4px;line-height:1.4}
+.peritodo{margin-top:16px;display:inline-block;font-size:11px;font-weight:700;color:var(--pill-yellow-tx);background:var(--pill-yellow-bg);border-radius:999px;padding:4px 12px}
+
+/* trust T2 · honest AI (brief §4) */
+.t2wrap{display:grid;grid-template-columns:600px 1fr;gap:60px;margin-top:24px;align-items:center}
+.t2rows{-webkit-mask-image:none;mask-image:none;margin-top:2px}
+.t2rows .gcrow p{font-size:12px}
+.gcrow.ask .gck b{color:var(--pill-yellow-tx)}
+
+/* money slide (brief §9) */
+.mrow{display:grid;grid-template-columns:1.3fr 1fr;gap:70px;margin-top:24px;align-items:center}
+.mline{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:13px 2px;border-bottom:1px solid var(--hairline-2)}
+.mline:last-child{border-bottom:0}
+.mline p{font-size:15.5px;color:var(--ink-2);font-weight:600}
+.mline b{font-size:15px;font-weight:800;color:var(--ink-soft);white-space:nowrap}
+.mmult{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.mmult>.icl-wrap{display:flex;width:40px;height:40px;border-radius:50%;background:var(--pill-rose-bg);color:var(--pill-rose-tx);align-items:center;justify-content:center}
+.mmult .icl{width:17px;height:17px}
+.mmult>b{font-size:27px;font-weight:800;letter-spacing:-.02em;line-height:1.25;color:var(--ink-soft)}
+.mmult .peritodo{margin-top:0}
