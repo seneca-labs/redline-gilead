@@ -442,3 +442,9 @@ Converts the Majority agency deck into the Gilead enterprise deck per the "Redli
 | Speaker notes | Full rewrite for the enterprise room: never-say-reviewer-prediction rule, CRC training-timing argument on slide 19, trust-chapter scripting, TODO list; red lines pointed to the internal memo, not this folder |
 
 Verified via full-deck headless probe (28/28 slides, nav groups highlight correctly incl. new Trust stop) + screenshots of console, two-views, intake, falcon, CRC, seats, T1–T3, rollout, money, investment. Only 404 is favicon.
+
+## gilead-v1.1 · Falcon un-named
+
+| Change | Detail |
+|---|---|
+| Two-halves slide | "Review · Veeva Falcon MLR" pill softened to "Review · Veeva" — the room may not be thinking of Falcon, so the slide speaks to Redline and Veeva as a whole while the rows cover Falcon's territory implicitly (routing, review, approval, system of record). Falcon is now a spoken-only answer, and only if they raise it (notes §16) |

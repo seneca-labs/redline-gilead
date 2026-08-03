@@ -55,7 +55,7 @@ Drafted responses with sources. One click stages the response set for Veeva — 
 Sources in, validated artifacts out. Only approved folders are indexed; nothing becomes a rule without a human validating it.
 
 ## 16 · Review and preparation are two halves
-The Falcon answer, named plainly. Veeva Falcon MLR owns review; Redline owns preparation. We are not competing with the committee's tooling, we are feeding it cleaner inputs. Read the landing line and stop: cleaner submissions in, faster reviews out — Redline makes everything downstream work better, including Veeva.
+Veeva as a whole owns review; Redline owns preparation. Falcon is deliberately NOT named on the slide — they may not be thinking about it, and we don't put a product in their head. The rows speak to what Falcon offers implicitly: routing, review, approval, the system of record. SPOKEN ONLY, and only if they raise Falcon or MLR tooling: "whatever your review runs on — including Falcon — Redline feeds it cleaner inputs. We're the other half, not a competitor." Read the landing line and stop: cleaner submissions in, faster reviews out — Redline makes everything downstream work better, including Veeva.
 
 ## 17 · Communicates where your teams do
 Calendar and inbox. Trust guardrails if asked: verified senders on approved domains, provenance on everything ingested, part-number thread matching with confirmation (never silent filing), allowlisted actions, in-app human approval for anything that exports or submits.
