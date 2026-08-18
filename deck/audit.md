@@ -626,3 +626,18 @@ Cal's directives: delete the Solved-one-for-one slide; the green-to-yellow accen
 Verification: probe-v11 full pass (23/23, steps=4 on slide 7, chapters contiguous, no Solution dot, no end overrun, zero errors) + captures reviewed: 3 (yellow kept), 5 (green pipeline, 02 kick), 7 s1-s4 (green chips, green summary box), 17 (green seat labels), 21 (green ring facts).
 
 Addendum (same day, v11.4): seats timeline stop 1 retitled "Uploads the work" with seat label "Agency · with Redline"; stop 3 seat label "Vendor pod · with Redline"; land line "Every handoff is finished work. Nobody re-types anything." removed (notes updated to match). Intake rail step 2 label "Context" renamed "Context upload"; mockup's top-right "Build deck" button removed, "Save as draft" remains. Probe full pass 23/23 + captures 7 s1-s4 and 17 reviewed.
+
+## gilead-v11.5 · Seats as owner pills, 17 matches 18, origin numbers green (2026-08-18)
+
+Cal's directives: seats on 17 become pills, one color per seat type, Redline gray; 17 takes the same format as 18; 18 gets the same seat pills, both at the bottom of the cards for the owners of that step. Then: the How we got here numbers go green instead of yellow.
+
+| Change | Detail |
+|---|---|
+| Slide 17 | Rebuilt from the .tline.five dot-timeline to the same five-card .looprow as slide 18 (no return arc; the loop belongs to 18). Owner pills at each card bottom: 1 Agency+Redline, 2 Agency+Redline, 3 Vendor pod+Redline, 4 Gilead, 5 Agency+Vendor pod+Gilead. |
+| Slide 18 | Each card gains its owner pill row: 1 Gilead, 2 Redline, 3 Vendor pod+Redline, 4 Agency+Gilead, 5 Vendor pod. |
+| Pill colors | One color per seat type, everywhere: Agency chip-blue, Vendor pod chip-purple, Gilead chip-green, Redline chip-nt gray. All .sm size. |
+| CSS | .loopnode goes flex-column; new .lnown row (wrap, margin-top:auto) bottom-aligns pills across unequal card text. Unused .tline.five block deleted (base .tline stays for rollout). Cache-bust ?v=28. |
+| Accent | .ds.yaccent override deleted with the yaccent class on slide 3; the four ftstep circles return to global sage green. No yellow accent remains anywhere; chip-yellow keeps its semantic-warning uses only. |
+| Notes | ##17 header and lead updated to the card+pill format; ##18 mentions owner pills at card bottoms. |
+
+Verification: probe-v11 full pass (23/23, steps=4 on slide 7, chapters contiguous, no end overrun, favicon 404 only) + captures reviewed: 3 (green numbers), 5 (looprow.four unaffected by flex change), 17 (pills bottom-aligned, node-5 three pills wrap cleanly), 18 (pills bottom-aligned under the return arc).
