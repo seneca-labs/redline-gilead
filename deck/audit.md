@@ -572,3 +572,22 @@ Cal's directives: intake should flow what-you're-submitting → context → deta
 | CSS | .gipane.p2 .gf gate added; dead .seg/.onn intake rules + giSeg keyframe removed; cache-bust v=23. |
 
 Verification: probe-v9 (substep-aware) full pass + reduced-motion captures of changed slides reviewed.
+
+## gilead-v11 · Restructure to 24 slides (2026-08-18)
+
+Cal's directives: big restructure (Feed origin slide new; What-Redline-is high-level; seats slide folds old 15+23; re-submission loop; data-lives nested; trust reorder dial→honest→data; delete old 23/25/A1-A3; next steps ×3). Then round 2 on review: slides 6 and 7 redesigned for clarity; Feed slide moved to position 3 (right after agenda); green accent → yellow.
+
+| Slide | Change |
+|---|---|
+| Order | 24 slides: Cover · Agenda · How we got here · Problem · Solved · What Redline is · The seats it serves · Console · Intake (steps=4) · Built · Committee read · Flag detail · Implement · Track · Sticky · Communicates · Standards · Integrated · Re-submission round · Dial · Honest · Data lives · Rollout · Next steps. Appendix chapter deleted. |
+| 3 How we got here | New Feed origin slide (ftsflow ×4: The Feed / agent ran day-to-day / people stayed in charge / same discipline pointed at PRC) + "Not a concept. A system we already run." Moved from post-Solved to post-Agenda per Cal; chapter Overview so nav dots stay contiguous. |
+| 6 What Redline is | Redesigned from three P/R/A check-card columns (read as a duplicate of slide 7) to a 4-node horizontal pipeline (looprow.four): work goes in → Redline prepares → a person approves → committee reviews in Veeva. Land: "Redline does the preparation. Your people make every decision." |
+| 7 The seats it serves | Cards stripped to one seatdo sentence + one "What changes:" line each; equal columns, bigger handoff arrows (a finished build / a staged submission); loopback return line kept. Land: "Every handoff is finished work. Nobody re-types anything." |
+| 19 round | Rebuilt as re-submission loop: comments land → to-do list → applied by pod → agency and Gilead review → resubmitted; return arc "if comments come back, the same loop runs again." |
+| 22 data lives | Nested diagram: AWS account (dashed) ⊃ Redline environment (solid) ⊃ 3 agency workspaces + wide model node; Veeva below via down-arrow, outside the AI path; 6 msaann facts right. |
+| 24 next steps | 3 steps: follow up with CPC · scope and pricing · demo with the agency + "Thank you." |
+| Color | Sage green accent → yellow across the deck: --pill-sage-bg #e2efe4→#f5ecc6, --pill-sage-tx #3f7a4e→#8a6d15, msaann ring border #cfe4d4→#e6d8a0. Variable names unchanged. |
+| CSS | Added .seatlane/.seatdo/.seatarrc, .looprow.four, .flythumb, nest* family; deleted .tsmech, .ndlist/.ndrow/.ndarr, .lyr*, .awsrow/.awsperi/.awsflow/.awsarr/.awsfacts, .msaannlist.two, .sgets/.sgrow. g3 chip reveal selector fixed. Cache-bust styles.css ?v=25. |
+| Speaker notes | Full rewrite for the 24-slide order; appendix references removed (security depth is a spoken offer + separate call); Falcon spoken-only line moved to slide 6; CPC pods background under slide 7. |
+
+Verification: probe-v11 (substep-aware) full pass twice (24/24, steps=4 on intake, chapters contiguous Overview→Rollout, no end overrun, zero console/page errors) + reduced-motion captures of all changed slides reviewed, including wrap fixes on 6/7 and yellow-accent spot checks (3, 9, 20, 23).

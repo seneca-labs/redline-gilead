@@ -19,7 +19,7 @@
   --wash:#f5f4f2;
   --chrome:#f1f0ee;
   --pill-yellow-bg:#faf0cd;  --pill-yellow-tx:#8f7422;
-  --pill-sage-bg:#e2efe4;    --pill-sage-tx:#3f7a4e;
+  --pill-sage-bg:#f5ecc6;    --pill-sage-tx:#8a6d15;
   --pill-lavender-bg:#ece9fb;--pill-lavender-tx:#5b50b8;
   --pill-rose-bg:#f9e3e3;    --pill-rose-tx:#b04a4a;
   --pill-blue-bg:#e3ebfb;    --pill-blue-tx:#3d5cc4;
@@ -800,7 +800,7 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .msaannlist{display:flex;flex-direction:column}
 .msaann{position:relative;padding:12px 4px 12px 40px;border-bottom:1px solid var(--hairline)}
 .msaann:last-child{border-bottom:0}
-.msaann u{position:absolute;left:0;top:12px;display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:var(--pill-sage-bg);border:1px solid #cfe4d4;border-radius:999px;text-decoration:none}
+.msaann u{position:absolute;left:0;top:12px;display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:var(--pill-sage-bg);border:1px solid #e6d8a0;border-radius:999px;text-decoration:none}
 .msaann u .icl{width:12px;height:12px;color:var(--pill-sage-tx)}
 .msaann b{display:block;font-size:13.5px;font-weight:700;color:var(--ink-soft)}
 .msaann small{font-size:11px;color:var(--muted);display:block;margin-top:3px;line-height:1.4}
@@ -1134,6 +1134,15 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .gfile .icl{width:15px;height:15px;color:var(--ink-4);flex-shrink:0}
 .gfile b{font-size:13.5px;font-weight:700;color:var(--ink-soft);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .gfile small{font-size:11.5px;color:var(--faint)}
+/* mini flyer thumbnail in the asset-upload file row */
+.flythumb{display:flex;flex-direction:column;gap:3px;width:34px;height:44px;flex-shrink:0;background:var(--paper);border:1px solid var(--hairline-3);border-radius:4px;padding:4px 4px 3px;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.flythumb i{display:block;border-radius:2px}
+.flythumb .fh{height:13px;background:var(--pill-sage-bg);border:1px solid var(--pill-sage-tx);opacity:.85}
+.flythumb .fl{height:2.5px;background:var(--hairline-4)}
+.flythumb .fl.w1{width:100%}
+.flythumb .fl.w2{width:78%}
+.flythumb .fl.w3{width:88%}
+.flythumb .fisi{margin-top:auto;height:6px;background:var(--wash);border:1px solid var(--hairline-2)}
 /* one pass, 4.5s per step, fields fill in as it goes, holds on the requirements card */
 .gf{opacity:0}
 .ds.on .gf{animation:giFill .45s cubic-bezier(.22,1,.36,1) both}
@@ -1145,7 +1154,7 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .ds.on.s2 .gistep.g1,.ds.on.s3 .gistep.g2,.ds.on.s4 .gistep.g3{opacity:.85}
 .ds.on.s2 .gistep.g1 small,.ds.on.s2 .gistep.g1 .chip,
 .ds.on.s3 .gistep.g2 small,.ds.on.s3 .gistep.g2 .chip,
-.ds.on.s4 .gistep.g3 small{animation:giAns .5s cubic-bezier(.22,1,.36,1) both}
+.ds.on.s4 .gistep.g3 small,.ds.on.s4 .gistep.g3 .chip{animation:giAns .5s cubic-bezier(.22,1,.36,1) both}
 .ds.on.s4 .gistep.g4 small{animation:giAns .5s cubic-bezier(.22,1,.36,1) .4s both}
 .ds.on:not(.s2) .gipane.p1,
 .ds.on.s2:not(.s3) .gipane.p2,
@@ -1179,9 +1188,13 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .tsrow .icl{width:14px;height:14px;color:var(--pill-sage-tx);margin-top:2.5px;flex-shrink:0}
 .tsrow p{font-size:13px;color:var(--ink-2);font-weight:600;line-height:1.45}
 .tsbound{margin-top:auto;padding-top:11px;border-top:1px solid var(--hairline-2);font-size:12.5px;font-weight:700;color:var(--ink-4)}
-.tsmech{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 22px;margin-top:18px;padding-top:15px;border-top:1px solid var(--hairline-2)}
-.tsmech span{font-size:12.5px;font-weight:600;color:var(--muted);display:flex;align-items:baseline;gap:8px}
-.tsmech span::before{content:"";width:5px;height:5px;border-radius:999px;background:var(--pill-sage-tx);flex-shrink:0;transform:translateY(-2px)}
+/* the seats it serves (v11) */
+.seatlane{display:grid;grid-template-columns:1fr 78px 1fr 78px 1fr;gap:10px;align-items:stretch;margin-top:22px}
+.seatlane .tseat{padding:17px 19px 14px}
+.seatdo{font-size:13.5px;color:var(--ink-2);font-weight:600;line-height:1.55;padding:10px 0 14px}
+.seatarrc{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;padding:0 2px}
+.seatarrc .icl{width:20px;height:20px;color:var(--ghost)}
+.seatarrc em{font-style:normal;font-size:11.5px;font-weight:700;color:var(--faint);text-align:center;line-height:1.35}
 
 /* follow the sun (v8 §3) */
 .ftsflow{margin-top:26px;max-width:1040px}
@@ -1210,29 +1223,11 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .falseam i{width:1px;height:64px;background:var(--hairline-4)}
 .falseam .icl{width:20px;height:20px;color:var(--ghost)}
 
-/* the account lead's day (v8 §7) */
-.ndlist{margin-top:18px;max-width:1120px}
-.ndrow{display:grid;grid-template-columns:1fr 30px 1fr;gap:16px;align-items:center;padding:11px 4px;border-bottom:1px solid var(--hairline)}
-.ndrow:last-of-type{border-bottom:0}
-.ndrow .was{font-size:14.5px;color:var(--muted);font-weight:500;line-height:1.45}
-.ndrow .now{font-size:14.5px;color:var(--ink-2);font-weight:700;line-height:1.45}
-.ndarr{display:flex;align-items:center;justify-content:center}
-.ndarr .icl{width:16px;height:16px;color:var(--ghost)}
-
 /* built for Gilead (brief §5) */
 .crclist{margin-top:24px;max-width:960px}
 .crclist .becomerow{padding:15px 2px;align-items:flex-start}
 .crclist .becomerow .icl{width:18px;height:18px;color:var(--pill-sage-tx);margin-top:3px}
 .crclist .becomerow p{font-size:17px;color:var(--ink-2);font-weight:600;line-height:1.5}
-
-/* three layers (v8 §4) */
-.lyrgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:26px}
-.lyr{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--hairline-2);border-radius:16px;padding:20px 22px 16px;box-shadow:0 6px 18px rgba(0,0,0,.04)}
-.lyrhead{padding-bottom:11px;border-bottom:1px solid var(--hairline);margin-bottom:11px}
-.lyrhead em{display:block;font-style:normal;font-size:12px;font-weight:700;color:var(--faint)}
-.lyrhead b{display:block;font-size:19px;font-weight:800;letter-spacing:-.02em;color:var(--ink-soft);margin-top:3px}
-.lyr>p{font-size:13.5px;color:var(--ink-2);font-weight:500;line-height:1.55}
-.lyrbound{margin-top:auto;padding-top:12px;border-top:1px solid var(--hairline-2);font-size:13px;font-weight:700;color:var(--ink-4)}
 
 /* trust T1 · perimeter (brief §4) */
 .t1wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:60px;margin-top:26px;align-items:center}
@@ -1243,23 +1238,29 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .peribox b{display:block;font-size:14px;font-weight:800;letter-spacing:-.01em}
 .peribox small{display:block;font-size:10.5px;color:var(--muted);margin-top:4px;line-height:1.4}
 
-/* trust T1b · AWS architecture (v1.2) */
-.awsrow{display:grid;grid-template-columns:1fr 44px 190px;margin-top:26px;align-items:center}
-.awsperi{border:1.5px dashed var(--hairline-4);border-radius:20px;padding:20px 22px 22px;background:var(--wash)}
-.awsflow{display:grid;grid-template-columns:1fr 26px 1.05fr 26px 1.15fr 26px 1fr;gap:8px;align-items:center}
+/* where your data lives, nested (v11) */
 .awsnode{background:var(--surface);border:1px solid var(--hairline-2);border-radius:14px;padding:14px 13px;box-shadow:0 6px 16px rgba(0,0,0,.05);align-self:stretch}
 .awsnode b{display:block;font-size:13.5px;font-weight:800;letter-spacing:-.01em;line-height:1.25}
 .awsnode small{display:block;font-size:10.5px;color:var(--muted);margin-top:5px;line-height:1.45}
 .awsnode.hi{border-color:var(--ink-4);box-shadow:0 10px 24px rgba(0,0,0,.08)}
 .awsnode.veeva{align-self:center;background:var(--paper);border-color:var(--hairline-4);box-shadow:none}
-.awsarr{display:flex;align-items:center;justify-content:center}
-.awsarr .icl{width:16px;height:16px;color:var(--ghost)}
-.awsarr.out .icl{width:18px;height:18px}
-.awsfacts{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-.awsfacts span{font-size:11.5px;font-weight:700;color:var(--ink-4);border:1px solid var(--hairline-2);background:var(--chrome);border-radius:999px;padding:6px 14px}
+.nestwrap{display:grid;grid-template-columns:1.4fr 1fr;gap:46px;margin-top:20px;align-items:start}
+.nestouter{border:1.5px dashed var(--hairline-4);border-radius:20px;padding:16px 18px 18px;background:var(--wash)}
+.nestlab{font-size:12.5px;font-weight:800;color:var(--ink-4);margin-bottom:12px;letter-spacing:-.01em}
+.nestlab.in{margin-bottom:10px}
+.nestinner{border:1px solid var(--hairline-3);border-radius:16px;padding:13px 15px 15px;background:var(--chrome)}
+.nestviews{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.awsnode.nestwide{display:block;margin-top:10px}
+.nestveeva{display:flex;align-items:center;gap:14px;margin-top:14px;padding-left:24px}
+.nestdown{display:flex;align-items:center;justify-content:center}
+.nestdown .icl{width:18px;height:18px;color:var(--ghost)}
+.nestveeva em{font-style:normal;font-size:12px;font-weight:700;color:var(--faint)}
+.nestveeva .awsnode.veeva{min-width:230px}
+.msaannlist.nestlist{margin-top:2px}
 
 /* one round, start to close (simplify v2) */
 .looprow{display:grid;grid-template-columns:1fr 26px 1fr 26px 1fr 26px 1fr 26px 1fr;gap:10px;align-items:stretch;margin-top:34px}
+.looprow.four{grid-template-columns:1fr 30px 1fr 30px 1fr 30px 1fr}
 .loopnode{background:var(--surface);border:1px solid var(--hairline-2);border-radius:16px;padding:18px 17px;box-shadow:0 6px 18px rgba(0,0,0,.04)}
 .loopnode i{font-style:normal;display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:999px;background:var(--pill-sage-bg);color:var(--pill-sage-tx);font-size:12.5px;font-weight:800;margin-bottom:10px}
 .loopnode b{display:block;font-size:16.5px;font-weight:800;letter-spacing:-.01em;color:var(--ink-soft);line-height:1.3}
@@ -1270,10 +1271,6 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .loopback::before{content:"";position:absolute;left:-6.5px;top:-8px;border:5px solid transparent;border-bottom:8px solid var(--hairline-4)}
 .loopback em{position:absolute;left:50%;bottom:0;transform:translate(-50%,50%);background:var(--paper);padding:0 12px;font-style:normal;font-size:12px;font-weight:700;color:var(--faint)}
 
-/* where your data lives, merged (simplify v2) */
-.msaannlist.two{display:grid;grid-template-columns:1fr 1fr;column-gap:48px;margin-top:16px}
-.msaannlist.two .msaann b{font-size:13.5px;line-height:1.45}
-
 /* ai is a dial, thumbnails (simplify v2) */
 .dialgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:30px}
 .dialcol b{display:block;font-size:19px;font-weight:800;letter-spacing:-.01em;color:var(--ink-soft);margin-top:14px}
@@ -1282,15 +1279,6 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .dthumbin{width:1030px;height:540px;transform:scale(.4);transform-origin:top left;pointer-events:none}
 .dthumbin>.window,.dthumbin>.crop{width:100%!important;height:100%;margin:0;display:flex;flex-direction:column;box-shadow:none;border:0;border-radius:0}
 .dthumbin .app{flex:1;min-height:0;overflow:hidden}
-
-/* what each seat gets (simplify v2) */
-.sgets{margin-top:30px;max-width:1220px}
-.sgrow{display:grid;grid-template-columns:200px 1fr 1fr;gap:24px;align-items:baseline;padding:15px 4px;border-bottom:1px solid var(--hairline)}
-.sgrow:last-of-type{border-bottom:0}
-.sgrow.head{padding:0 4px 10px;border-bottom:1px solid var(--hairline-2)}
-.sgrow.head span{font-size:11.5px;font-weight:800;color:var(--faint)}
-.sgrow i{font-style:normal;font-size:17px;font-weight:800;letter-spacing:-.01em;color:var(--ink-soft)}
-.sgrow p{font-size:14.5px;color:var(--ink-2);font-weight:500;line-height:1.5}
 
 /* trust T2 · honest AI (brief §4) */
 .t2wrap{display:grid;grid-template-columns:600px 1fr;gap:60px;margin-top:24px;align-items:center}
