@@ -660,3 +660,5 @@ Verification: probe-v11 full pass (23/23, steps=4 on slide 7, no end overrun, fa
 Addendum (same day): Redline pill added to slide 17 stop 5 (Close the round: Agency, Vendor pod, Gilead, Redline) and slide 18 nodes 4 (Agency, Gilead, Redline) and 5 (Vendor pod, Redline). Probe full pass 23/23 + captures 17 and 18 reviewed (node-5 four pills wrap into two clean rows).
 
 Addendum (same day): intake p2 title promoted to "Upload the context for the asset."; "What explains it" deleted. Probe full pass 23/23 + capture 7 s2 reviewed.
+
+Addendum (same day): How-we-got-here beat 3 subtext now "The agent prepared, and we approved everything that moved"; beat 4 subtext now "Same HITL, running for PRC submissions at scale" (both Cal verbatim). Notes ##3 beat updated. Probe full pass 23/23 + capture 3 reviewed.
