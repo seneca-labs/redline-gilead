@@ -658,3 +658,5 @@ Cal's directives: the asked-for intake lines became subtext; promote them. Step 
 Verification: probe-v11 full pass (23/23, steps=4 on slide 7, no end overrun, favicon 404 only) + one-off captures reviewed: 7 s1 (promoted title, no subtext), 7 s4 (Build inside the green summary card, footer gone), 8 (toolbar labels tight).
 
 Addendum (same day): Redline pill added to slide 17 stop 5 (Close the round: Agency, Vendor pod, Gilead, Redline) and slide 18 nodes 4 (Agency, Gilead, Redline) and 5 (Vendor pod, Redline). Probe full pass 23/23 + captures 17 and 18 reviewed (node-5 four pills wrap into two clean rows).
+
+Addendum (same day): intake p2 title promoted to "Upload the context for the asset."; "What explains it" deleted. Probe full pass 23/23 + capture 7 s2 reviewed.
