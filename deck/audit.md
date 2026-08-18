@@ -610,3 +610,17 @@ Cal's directives, applied post-v11 ship: next-steps demo line; round to-do wordi
 Verification: probe-v11 (substep-aware, updated shots map) full pass (24/24, steps=4 on slide 8, chapters contiguous, no end overrun, zero console/page errors beyond favicon 404) + reduced-motion captures reviewed: 6 (new titles, node-3 two-line wrap clean), 8 s1–s4 (launch-date flow, build summary), 18 (timeline), 19, 24.
 
 Addendum (same day): slide 6 retitled "How it works."; node 4 becomes the loop-closer "PRC reviews, the round comes back" ("In Veeva, unchanged. Every comment becomes a worklist, and the system remembers"); closing line replaced with "Every round teaches the next. That's how they get fewer, and shorter." (the line that cashes the lead's promise); "Redline does the preparation. Your people make every decision." moved to spoken notes. Reviewer's ordering flag on a "Prepare. Review. Approve." slide inspected: no such slide in this build; console boundary strip already reads as parallel ownership statements. Probe full pass + slide 6 capture reviewed.
+
+## gilead-v11.3 · Solutions slide deleted, yellow scoped to origin slide (2026-08-18)
+
+Cal's directives: delete the Solved-one-for-one slide; the green-to-yellow accent flip was meant for How we got here only, not globally; intake build-summary box loses the side bar and sits in a light green box.
+
+| Change | Detail |
+|---|---|
+| Order | 23 slides. Slide 5 "Solved, one for one" deleted with its Solution chapter (nav dots now Overview · Problem · Redline · Trust · Rollout). Agenda becomes four stops; kicks renumbered 01 Problem · 02 Redline · 03 Trust · 04 Rollout. Slides 6-24 shift up one; intake (steps=4) is slide 7. |
+| Accent | Global sage vars reverted to green (--pill-sage-bg #e2efe4, --pill-sage-tx #3f7a4e; msaann ring #cfe4d4). Yellow lives only on How we got here via .ds.yaccent var override (the four ftstep circles). Intake recommended-date chips switched chip-yellow to chip-green (semantic-warning chip-yellow uses elsewhere untouched). |
+| .bsum | Side border removed; light green fill (var(--pill-sage-bg)), no hairline. |
+| Notes | 23 slides; agenda note four stops; Solved note deleted, its regulatory-path reassurance folded into the problem note as the bridge out; headings renumbered; round note before-reference now slides 7 to 11. |
+| CSS | Cache-bust ?v=27. |
+
+Verification: probe-v11 full pass (23/23, steps=4 on slide 7, chapters contiguous, no Solution dot, no end overrun, zero errors) + captures reviewed: 3 (yellow kept), 5 (green pipeline, 02 kick), 7 s1-s4 (green chips, green summary box), 17 (green seat labels), 21 (green ring facts).
