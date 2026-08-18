@@ -591,3 +591,20 @@ Cal's directives: big restructure (Feed origin slide new; What-Redline-is high-l
 | Speaker notes | Full rewrite for the 24-slide order; appendix references removed (security depth is a spoken offer + separate call); Falcon spoken-only line moved to slide 6; CPC pods background under slide 7. |
 
 Verification: probe-v11 (substep-aware) full pass twice (24/24, steps=4 on intake, chapters contiguous Overview→Rollout, no end overrun, zero console/page errors) + reduced-motion captures of all changed slides reviewed, including wrap fixes on 6/7 and yellow-accent spot checks (3, 9, 20, 23).
+
+## gilead-v11.1 · Live revision wave (2026-08-18)
+
+Cal's directives, applied post-v11 ship: next-steps demo line; round to-do wording; intake tiles centered; intake rail subtexts at step-entry; intake step 1/2 subtitles; launch-date input with recommended dates; build-and-why summary on Submit; slide 7 moved after 18 as a seats timeline; slide 6 node retitles + new lead.
+
+| Slide | Change |
+|---|---|
+| Order | Seats slide moved from 7 to 18 (after Integrated, before Re-submission round); slides 8–17 shift up one; total stays 24; Redline chapter spans 6–19 so nav dots stay contiguous. Intake (steps=4) is now slide 8. |
+| 6 What Redline is | Lead: "Redline builds, reviews, and manages every PRC submission, so approval takes fewer, shorter rounds." Nodes retitled: Upload an asset for review · Redline builds the submission · Gilead / an agency approves and submits · PRC reviews. "Every submission takes the same path." removed. |
+| 8 Intake | Step 1 subtitle "Upload an asset for PRC review."; step 2 "Upload the context for the asset."; tiles center-aligned. Step 3 rebuilt: Brand · Part number · Launch date typed, then recommended Submit by (Aug 11 · 6 days before launch) and PRC review (Aug 13 · 4 days before launch). "What this format needs from your history" removed; Submit step gains "What Redline will build, and why" one-line summary (.bsum) before Build. Rail subtexts now reveal when their step becomes current, not after (g1 on slide, gN at sN); verified via computed-opacity probe. |
+| 18 Seats timeline | Rebuilt as five-stop timeline (tline.five, rollout dot-line pattern): Agency creates the work · Agency with Redline signs off the build · Vendor pod packages and submits · Gilead reviews in Veeva · all three seats close the round. Seat named in accent above each stage. Land kept: "Every handoff is finished work. Nobody re-types anything." |
+| 19 round | Node 2: "Redline makes a to-do list." |
+| 24 next steps | Step 3: "Demo · Live, on current or past submissions." |
+| CSS | Added .bsum, .ttile centering, .tline.five family; rail-reveal selectors re-gated per step; deleted dead .tseats/.tseat/.tseathead/.tsrow/.tsbound/.seatlane/.seatdo/.seatarrc. Cache-bust styles.css ?v=26. |
+| Speaker notes | ##6 rewritten for new lead and node titles; ##7–##17 renumbered; new ##18 seats-timeline note (CPC pods background and mandate path kept there); ##19 before-reference now slides 8 to 12; ##8 intake note covers launch-date flow; ##24 demo line. |
+
+Verification: probe-v11 (substep-aware, updated shots map) full pass (24/24, steps=4 on slide 8, chapters contiguous, no end overrun, zero console/page errors beyond favicon 404) + reduced-motion captures reviewed: 6 (new titles, node-3 two-line wrap clean), 8 s1–s4 (launch-date flow, build summary), 18 (timeline), 19, 24.
