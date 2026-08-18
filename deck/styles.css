@@ -693,7 +693,7 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .gbtn.wide{width:auto;padding:0 6px 0 8px;font-size:10.5px;font-weight:500;gap:3px}
 .gbtn svg{display:block}
 .gbtn i{font-style:normal;font-size:9px}
-.gtxt{padding:0 8px;font-size:11px;color:#3c4043;font-weight:500;border-radius:4px;line-height:22px}
+.gtxt{padding:0 8px;font-size:11px;color:#3c4043;font-weight:500;border-radius:4px;line-height:1.2;align-self:center}
 .gdiv{width:1px;height:16px;background:#e0e0e0;margin:0 2px}
 .gsep{flex:1}
 
@@ -1103,8 +1103,6 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .gidate{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:8px 0;border-bottom:1px solid var(--hairline)}
 .gidate label{font-size:13px;font-weight:700;color:var(--faint)}
 .gidate b{font-size:14.5px;font-weight:800;color:var(--ink-soft);white-space:nowrap}
-.gireqfoot{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:12px}
-.gireqfoot>span:first-child{font-size:12.5px;color:var(--muted);line-height:1.4}
 .dzrow{display:grid;grid-template-columns:1.45fr 1fr;gap:9px;margin-top:13px}
 .dzrow .gfile{margin-top:0}
 .dropz{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:5px;border:1.5px dashed var(--hairline-4);border-radius:12px;padding:19px 10px;background:var(--wash)}
@@ -1130,8 +1128,8 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .sfld label{font-size:11.5px;font-weight:700;color:var(--faint)}
 .sfld span{font-size:15px;font-weight:700;color:var(--ink-soft);min-height:19px}
 .fchip{display:flex;align-items:center;font-size:11px;font-weight:700;color:var(--ink-2);border:1px solid var(--hairline-2);border-radius:999px;padding:6px 12px;background:var(--surface);width:fit-content}
-.bsum{margin-top:7px;border-radius:10px;background:var(--pill-sage-bg);padding:11px 14px}
-.bsum p{font-size:13px;color:var(--ink-2);font-weight:600;line-height:1.5}
+.bsum{display:flex;align-items:center;gap:14px;margin-top:7px;border-radius:10px;background:var(--pill-sage-bg);padding:11px 14px}
+.bsum p{flex:1;font-size:13px;color:var(--ink-2);font-weight:600;line-height:1.5}
 .gfile{display:flex;align-items:center;gap:9px;border:1px solid var(--hairline-2);border-radius:10px;padding:9px 12px;background:var(--surface);margin-top:8px}
 .gfile .icl{width:15px;height:15px;color:var(--ink-4);flex-shrink:0}
 .gfile b{font-size:13.5px;font-weight:700;color:var(--ink-soft);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

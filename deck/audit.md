@@ -641,3 +641,18 @@ Cal's directives: seats on 17 become pills, one color per seat type, Redline gra
 | Notes | ##17 header and lead updated to the card+pill format; ##18 mentions owner pills at card bottoms. |
 
 Verification: probe-v11 full pass (23/23, steps=4 on slide 7, chapters contiguous, no end overrun, favicon 404 only) + captures reviewed: 3 (green numbers), 5 (looprow.four unaffected by flex change), 17 (pills bottom-aligned, node-5 three pills wrap cleanly), 18 (pills bottom-aligned under the return arc).
+
+## gilead-v11.6 · Intake copy promoted to titles, Build on the summary card, toolbar leading (2026-08-18)
+
+Cal's directives: the asked-for intake lines became subtext; promote them. Step 1 title is "Upload an asset for PRC review." with no subtext; drop "Add the launch date. Redline recommends the rest."; drop "The whole path to launch, before the build starts."; drop the "What Redline will build, and why" label; the Build button moves into the flyer-summary card. Separately: too much vertical space in the wrapped "Replace image" / "Format options" toolbar labels.
+
+| Change | Detail |
+|---|---|
+| Intake p1 | Card title "Upload an asset for PRC review.", subtext removed. |
+| Intake p3 | "Add the launch date. Redline recommends the rest." subtext removed; title "Submission details" stands alone. |
+| Intake p4 | "What Redline will build, and why" label and the gireqfoot line ("The whole path to launch..." + Build) removed. The .bsum summary card goes flex; Build (cbtn grn) sits inside it, right of the copy. .gireqfoot CSS deleted (unused). |
+| Toolbar | .gtxt line-height 22px → 1.2 with align-self:center; the deck-studio "Replace image" / "Format options" two-line labels sit tight. |
+| Notes | ##7 step-four beat: Build sits on the summary card; whole-path-to-launch line marked spoken, not printed. |
+| CSS | Cache-bust ?v=29. |
+
+Verification: probe-v11 full pass (23/23, steps=4 on slide 7, no end overrun, favicon 404 only) + one-off captures reviewed: 7 s1 (promoted title, no subtext), 7 s4 (Build inside the green summary card, footer gone), 8 (toolbar labels tight).
