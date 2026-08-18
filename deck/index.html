@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20">
+<link rel="stylesheet" href="styles.css?v=21">
 </head>
 <body>
 <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
@@ -216,48 +216,61 @@
           </div>
           <div class="giflow">
             <div class="gisteps">
-              <div class="gistep g1"><i>1</i><div><b>What are you submitting?</b><small>summer-flyer.pdf uploaded</small><span class="chip chip-green sm">Looks like: Flyer · confirmed</span></div></div>
+              <div class="gistep g1"><i>1</i><div><b>What are you submitting?</b><small>summer-flyer.pdf + 3 context docs</small><span class="chip chip-green sm">PDF · Flyer — confirmed</span></div></div>
               <div class="gistep g2"><i>2</i><div><b>The asset</b><small>HIV prevention · Final · Round 1</small><span class="chip chip-nt sm">US-UNBC-4289</span></div></div>
-              <div class="gistep g3"><i>3</i><div><b>What explains it</b><small>Brief, market data, prior round</small></div></div>
+              <div class="gistep g3"><i>3</i><div><b>What explains it</b><small>Brief, transcript, prior round — linked</small></div></div>
               <div class="gistep g4"><i>4</i><div><b>Requirements and dates</b><small>from your own history</small></div></div>
             </div>
             <div class="gistagewrap">
               <div class="gipane p1">
                 <div class="gicard">
-                  <div class="gicardhead"><b>What are you submitting?</b><span>Drop it in. Redline detects the format.</span></div>
-                  <div class="dropz" style="margin-top:12px"><svg class="icl" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 21h14"/></svg><span>Drop the asset here</span></div>
-                  <div class="gfile gf" style="animation-delay:1.2s"><svg class="icl" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><b>summer-flyer.pdf</b><small>6 MB</small></div>
-                  <div class="steprow gf" style="margin-top:10px;align-items:center;animation-delay:2.4s"><span class="chip chip-green sm">Looks like: Flyer</span><span class="cbtn dark" style="margin-left:auto">That's right</span><span class="cbtn">Change</span></div>
+                  <div class="gicardhead"><b>What are you submitting?</b><span>The asset and its context, in one place.</span></div>
+                  <div class="dzrow">
+                    <div class="dropz main"><svg class="icl" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 21h14"/></svg><span>Drop the asset</span><small>one file · any format</small></div>
+                    <div class="dropz ctx"><svg class="icl" viewBox="0 0 24 24"><path d="M8 3h8l4 4v14H8z"/><path d="M4 7v14h12"/></svg><span>Context docs</span><small>briefs · transcripts · prior rounds</small></div>
+                    <div class="gfile gf" style="animation-delay:1.2s"><svg class="icl" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><b>summer-flyer.pdf</b><span class="chip chip-nt sm">PDF</span></div>
+                    <div class="gfile gf" style="animation-delay:1.8s"><svg class="icl" viewBox="0 0 24 24"><path d="M8 3h8l4 4v14H8z"/><path d="M4 7v14h12"/></svg><b>3 docs added</b></div>
+                  </div>
+                  <div class="tlab gf" style="animation-delay:2.6s">Asset type · detected, yours to confirm</div>
+                  <div class="typerow gf" style="animation-delay:2.6s">
+                    <div class="ttile hit"><svg class="icl" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg><span>Flyer</span></div>
+                    <div class="ttile"><svg class="icl" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg><span>Social</span></div>
+                    <div class="ttile"><svg class="icl" viewBox="0 0 24 24"><rect x="2" y="8" width="20" height="8" rx="2"/></svg><span>Banner</span></div>
+                    <div class="ttile"><svg class="icl" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M15 4v16"/></svg><span>Storyboard</span></div>
+                    <div class="ttile"><svg class="icl" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="16" rx="2"/><path d="M12 18v4M9 22h6"/></svg><span>Kiosk</span></div>
+                    <div class="ttile"><svg class="icl" viewBox="0 0 24 24"><path d="M7 8V3h10v5"/><rect x="4" y="8" width="16" height="8" rx="2"/><path d="M7 16h10v5H7z"/></svg><span>Print</span></div>
+                    <div class="ttile"><svg class="icl" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg><span>Other</span></div>
+                  </div>
+                  <div class="steprow gf" style="margin-top:12px;align-items:center;animation-delay:3.9s"><span class="chip chip-green sm">Flyer — confirm or change</span><span class="cbtn dark" style="margin-left:auto">Confirm</span><span class="cbtn">Change</span></div>
                 </div>
               </div>
               <div class="gipane p2">
                 <div class="gicard">
                   <div class="gicardhead"><b>The asset</b><span>Brand, part number, concept or final. Typed once.</span></div>
-                  <div class="sfld" style="margin-top:12px"><label>Brand</label><span data-type="HIV prevention" data-tdelay="5300" data-tdur="500"></span></div>
-                  <div class="sfld" style="margin-top:8px"><label>Part number</label><span data-type="US-UNBC-4289" data-tdelay="6200" data-tdur="700"></span></div>
-                  <div class="seg" style="margin-top:8px"><span>Concept</span><span class="onn" style="animation-delay:7.6s">Final</span></div>
-                  <div class="sfld" style="margin-top:8px"><label>Round</label><span data-type="Round 1" data-tdelay="8000" data-tdur="350"></span></div>
+                  <div class="sfld" style="margin-top:12px"><label>Brand</label><span data-type="HIV prevention" data-tdelay="6600" data-tdur="450"></span></div>
+                  <div class="sfld" style="margin-top:8px"><label>Part number</label><span data-type="US-UNBC-4289" data-tdelay="7300" data-tdur="650"></span></div>
+                  <div class="seg" style="margin-top:8px"><span>Concept</span><span class="onn" style="animation-delay:8.5s">Final</span></div>
+                  <div class="sfld" style="margin-top:8px"><label>Round</label><span data-type="Round 1" data-tdelay="8800" data-tdur="350"></span></div>
                 </div>
               </div>
               <div class="gipane p3">
                 <div class="gicard">
                   <div class="gicardhead"><b>What explains it</b><span>The kickoff call is context, not a memory.</span></div>
-                  <div class="gfile" style="margin-top:12px"><svg class="icl" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><b>summer-flyer.pdf</b><span class="chip chip-green sm">The asset</span></div>
-                  <div class="gfile gf" style="animation-delay:10.3s"><svg class="icl" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><b>Creative brief</b><span class="chip chip-nt sm">Context</span></div>
-                  <div class="gfile gf" style="animation-delay:11s"><svg class="icl" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><b>Market data · PDF</b><span class="chip chip-nt sm">Context</span></div>
-                  <div class="gfile gf" style="animation-delay:11.7s"><svg class="icl" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><b>Prior round · PDF</b><span class="chip chip-nt sm">Context</span></div>
+                  <div class="ctxread gf" style="animation-delay:11s"><svg class="icl" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><div><b>Creative brief</b><small>Claims and intent, sourced</small></div><span class="chip chip-green sm">Linked</span></div>
+                  <div class="ctxread gf" style="animation-delay:11.7s"><svg class="icl" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg><div><b>Kickoff transcript</b><small>What the client actually asked for</small></div><span class="chip chip-green sm">Linked</span></div>
+                  <div class="ctxread gf" style="animation-delay:12.4s"><svg class="icl" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><div><b>Prior round · PRC comments</b><small>What was flagged last time</small></div><span class="chip chip-green sm">Linked</span></div>
                 </div>
               </div>
               <div class="gipane p4">
                 <div class="gicard">
                   <div class="gicardhead"><b>Here's what this format needs</b><span>Flyer · from your submission history and encoded standards</span></div>
-                  <div class="gireq gf" style="animation-delay:14.9s"><svg class="icl"><use href="#i-lcheck"/></svg><p>Claims and fair balance presented together, same panel</p></div>
-                  <div class="gireq gf" style="animation-delay:15.4s"><svg class="icl"><use href="#i-lcheck"/></svg><p>Full ISI on the reverse, referenced on the front</p></div>
-                  <div class="gireq gf" style="animation-delay:15.9s"><svg class="icl"><use href="#i-lcheck"/></svg><p>Distribution channel and audience stated on the submission</p></div>
-                  <div class="gidate gf" style="animation-delay:16.5s"><label>Submit by</label><b>Tue, Aug 11 · 12:00</b></div>
-                  <div class="gidate gf" style="animation-delay:16.9s"><label>PRC review</label><b>Thu, Aug 13</b></div>
-                  <div class="gidate gf" style="animation-delay:17.3s"><label>Launch</label><span class="chip chip-yellow sm" style="margin-left:auto">4 days after review</span><b>Mon, Aug 17</b></div>
-                  <div class="gireqfoot gf" style="animation-delay:18s"><span>The whole path to launch, before the build starts.</span><span class="cbtn grn">Build</span></div>
+                  <div class="gireq gf" style="animation-delay:15.4s"><svg class="icl"><use href="#i-lcheck"/></svg><p>Claims and fair balance presented together, same panel</p></div>
+                  <div class="gireq gf" style="animation-delay:15.9s"><svg class="icl"><use href="#i-lcheck"/></svg><p>Full ISI on the reverse, referenced on the front</p></div>
+                  <div class="gireq gf" style="animation-delay:16.4s"><svg class="icl"><use href="#i-lcheck"/></svg><p>Distribution channel and audience stated on the submission</p></div>
+                  <div class="gidate gf" style="animation-delay:17s"><label>Submit by</label><b>Tue, Aug 11 · 12:00</b></div>
+                  <div class="gidate gf" style="animation-delay:17.4s"><label>PRC review</label><b>Thu, Aug 13</b></div>
+                  <div class="gidate gf" style="animation-delay:17.8s"><label>Launch</label><span class="chip chip-yellow sm" style="margin-left:auto">4 days after review</span><b>Mon, Aug 17</b></div>
+                  <div class="gireqfoot gf" style="animation-delay:18.4s"><span>The whole path to launch, before the build starts.</span><span class="cbtn grn">Build</span></div>
                 </div>
               </div>
             </div>
