@@ -624,3 +624,5 @@ Cal's directives: delete the Solved-one-for-one slide; the green-to-yellow accen
 | CSS | Cache-bust ?v=27. |
 
 Verification: probe-v11 full pass (23/23, steps=4 on slide 7, chapters contiguous, no Solution dot, no end overrun, zero errors) + captures reviewed: 3 (yellow kept), 5 (green pipeline, 02 kick), 7 s1-s4 (green chips, green summary box), 17 (green seat labels), 21 (green ring facts).
+
+Addendum (same day, v11.4): seats timeline stop 1 retitled "Uploads the work" with seat label "Agency · with Redline"; stop 3 seat label "Vendor pod · with Redline"; land line "Every handoff is finished work. Nobody re-types anything." removed (notes updated to match). Intake rail step 2 label "Context" renamed "Context upload"; mockup's top-right "Build deck" button removed, "Save as draft" remains. Probe full pass 23/23 + captures 7 s1-s4 and 17 reviewed.
