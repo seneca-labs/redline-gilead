@@ -33,32 +33,58 @@ function counters(el) {
   });
 }
 
+function runType(t) {
+  const full = t.dataset.type;
+  if (t._ti) clearInterval(t._ti);
+  if (t._tt) clearTimeout(t._tt);
+  if (rm) { t.textContent = full; return; }
+  t.textContent = '';
+  const delay = +t.dataset.tdelay || 400;
+  const dur = +t.dataset.tdur || 1100;
+  const step = Math.max(12, dur / full.length);
+  t._tt = setTimeout(() => {
+    let i = 0;
+    t._ti = setInterval(() => {
+      i++;
+      t.textContent = full.slice(0, i);
+      if (i >= full.length) clearInterval(t._ti);
+    }, step);
+  }, delay);
+}
+
 function typer(el) {
   el.querySelectorAll('[data-type]').forEach(t => {
-    const full = t.dataset.type;
-    if (t._ti) clearInterval(t._ti);
-    if (t._tt) clearTimeout(t._tt);
-    if (rm) { t.textContent = full; return; }
-    t.textContent = '';
-    const delay = +t.dataset.tdelay || 400;
-    const dur = +t.dataset.tdur || 1100;
-    const step = Math.max(12, dur / full.length);
-    t._tt = setTimeout(() => {
-      let i = 0;
-      t._ti = setInterval(() => {
-        i++;
-        t.textContent = full.slice(0, i);
-        if (i >= full.length) clearInterval(t._ti);
-      }, step);
-    }, delay);
+    if (t.dataset.tstep) {
+      // stepped typers reset on slide entry and run when their substep arrives
+      if (t._ti) clearInterval(t._ti);
+      if (t._tt) clearTimeout(t._tt);
+      t.textContent = rm ? t.dataset.type : '';
+      return;
+    }
+    runType(t);
   });
+}
+
+let sub = 1;
+function maxSub() { return +((S[cur] && S[cur].dataset.steps) || 1); }
+function setSub(n) {
+  const s = S[cur], mx = maxSub();
+  n = Math.max(1, Math.min(mx, n));
+  if (n > sub) s.querySelectorAll(`[data-type][data-tstep="${n}"]`).forEach(runType);
+  for (let k = 2; k <= mx; k++) s.classList.toggle('s' + k, k <= n);
+  sub = n;
 }
 
 function go(i) {
   i = Math.max(0, Math.min(S.length - 1, i));
   if (i === cur) return;
-  if (cur >= 0) S[cur].classList.remove('on');
+  if (cur >= 0) {
+    S[cur].classList.remove('on');
+    const mx = +(S[cur].dataset.steps || 1);
+    for (let k = 2; k <= mx; k++) S[cur].classList.remove('s' + k);
+  }
   cur = i;
+  sub = 1;
   S[cur].classList.add('on');
   D.forEach(d => d.classList.toggle('a', d.textContent === secs[cur]));
   pageno.textContent = (cur + 1) + ' / ' + S.length;
@@ -67,8 +93,14 @@ function go(i) {
 }
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(cur + 1); }
-  if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(cur - 1); }
+  if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+    e.preventDefault();
+    if (sub < maxSub()) setSub(sub + 1); else go(cur + 1);
+  }
+  if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+    e.preventDefault();
+    if (sub > 1) setSub(sub - 1); else go(cur - 1);
+  }
   if (e.key === 'Home') go(0);
   if (e.key === 'End') go(S.length - 1);
 });
@@ -81,6 +113,7 @@ document.querySelectorAll('[data-clone]').forEach(ph => {
   c.removeAttribute('data-b');
   c.style.width = '100%';
   c.style.height = '100%';
+  c.querySelectorAll('[data-type]').forEach(t => { t.textContent = t.dataset.type; });
   ph.appendChild(c);
 });
 

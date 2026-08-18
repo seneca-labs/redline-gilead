@@ -531,3 +531,27 @@ Verified via full-deck headless probe (34/34 slides, nav groups contiguous) + st
 | CSS/plumbing | .dzrow/.dropz.main/.dropz.ctx/.tlab/.typerow/.ttile(.hit)/.ctxread added; giHit keyframe; reduced-motion covers .ttile.hit; p2 typers 6600/7300/8800, p3 rows 11–12.4s, p4 15.4–18.4s; cache-bust ?v=21; speaker note 7 rewritten around the form/type split |
 
 Verified via full-deck headless probe (34/34 slides, nav groups contiguous) + state-matched screenshots of the intake pass: step-1 detection moment (forced p1), merged asset step, context read-back (forced p3), and the requirements hold.
+
+## gilead-v9 · Full simplify pass (Nikki review build, 2026-08-18) — supersedes v8/v8.1 rows where they conflict; nothing deleted
+
+Governing rule: painfully easy to read — one headline, one supporting line, the visual. No sentence that explains what the mockup already shows. Max 4 bullets anywhere. No footer restating the headline. 34 slides → 28 sections: 24 numbered + optional 25 + 3-slide appendix. Nav chapters: Overview · Problem · Solution · Redline · Trust · Rollout · Appendix.
+
+| Change | Detail |
+|---|---|
+| Intake is arrow-keyed | Autoplay retired. Slide 6 carries `data-steps="4"`; deck.js gains substeps (setSub, cumulative s2/s3/s4 classes, `data-tstep` typers fire on their step). ArrowRight consumes substeps before advancing; ArrowLeft steps back. giPane/giPaneHold keyframes deleted; reduced-motion block simplified (static full-state fallback) |
+| Deleted slides | "Clearing PRC in 3 buckets" · "Redline drafts. Your people decide." · "The account lead's day" (full 7-row) · "Built for how PRC works now" (CPC slide) · "One pipeline, every seat" (personas) · "What each layer includes" · "Investment · year one" (pricing comes separately, once the shape is agreed) · "Thank you" (absorbed into Next steps) |
+| Salvage | "The judgment stays. The middleware goes." moved onto From sticky to answer as its footer. CPC two-plus-years/offshore/mandate-path specifics moved to speaker notes (slide 15). Account lead's day survives compressed as optional slide 25 (3 was→now rows) |
+| Three seats absorbs CPC framing | Intro line: "PRC now runs across agencies, internal teams, and offshore pods. Redline is built for exactly that shape." Cards cut to who/what/boundary; mechanics strip cut to 3 pills: Standards flow down · Work flows up · Nothing is copied |
+| One round, start to close (rebuilt, replaces Follow the sun) | 5-node horizontal loop: Comments land → Become a worklist → The work gets done (agency or pod) → A staged queue (every change diffed against its request) → A named human approves ("Then, and only then, it moves") + dashed return arc labeled "the next round." Footer: "Every round runs the same loop. Each one gets shorter." |
+| Prepare. Review. Approve. (rebuilt, replaces Review-and-preparation halves) | 3 columns × 3 lines: Redline builds/checks/stages · the committee in Veeva, unchanged · people approve and a person submits. Footer: "Redline owns preparation. The committee owns review. People own approval." |
+| Trust merged 6 → 3 in-deck | "Where your data lives." absorbs the AWS VPC diagram (Agency workspaces → Redline → Bedrock·PrivateLink → Staged output → Veeva outside the AI path) + six one-liners (msaannlist.two). Honest AI cut to 4 one-line rows + CPC acceptance-testing footer. Dial rebuilt: Management · Reviewing · **Building** with real cloned mockup thumbnails (worklist / pre-read / deck studio) + "You set the level. Nothing skips approval." |
+| Appendix (new chapter) | One door out · How the models run. Three layers. (Azure/GPU TODO chip kept; "Next slide" → "Previous slide") · How the AI runs, inside AWS — kicked "Appendix · for the security call"; Next steps item 1 points at it |
+| Rollout merged | Calibration slide folded in as a strip under the timeline: "No agency goes live uncalibrated" · Audit · calibrate · go live · "The first agency's audit informs every one after it" |
+| What each seat gets (replaces personas + layer-includes) | 4 rows × 2 columns (What it's for / How it connects): Agencies · CPC · The committee · Brand marketing. No prices |
+| Problem/Solution 7 → 5 | One-for-one merges kept: knowledge-bases+conflicting-feedback → "Everyone works from a different knowledge base, so feedback conflicts." / retyped-into-Veeva+resubmissions → "Changes are re-typed into Veeva, and every resubmission starts over." Mirrored on Solved |
+| Next steps (replaces Thank you) | 4 steps: security review (appendix built for that call) · CPC working session · name the launch agency · scope and pricing separately. Ends "Thank you." |
+| Copy fix | Slide 19 "Zero retention, zero training." nbsp-bound so it wraps as a unit (no orphan "training.") |
+| CSS | .looprow/.loopnode/.looparr/.loopback added · .msaannlist.two · .dialgrid/.dialcol · .dthumb/.dthumbin clone-thumbnail scaler (scale .4 of real mockups) · .sgets/.sgrow. Cache-bust styles.css ?v=22, deck.js ?v=17 |
+| Speaker notes | Full rewrite for 28 sections; CPC background + mandate path under slide 15; follow-the-sun script under slide 13; intake note rewritten for arrow-keyed pacing (~19s autoplay language removed); appendix marked "don't present in the main meeting"; CPC TODO now speaker-notes-only |
+
+Verified via substep-aware headless probe (28/28 slides, steps=4 on intake, nav chapters contiguous, no end overrun, zero console/page/HTTP errors) + reduced-motion screenshots of all 28 sections including intake s1–s4; slide 19 recaptured after the wrap fix.

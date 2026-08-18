@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=21">
+<link rel="stylesheet" href="styles.css?v=22">
 </head>
 <body>
 <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,7 @@
       <div class="agrow" data-b="2"><i>02</i><p>Solution</p></div>
       <div class="agrow" data-b="3"><i>03</i><p>Redline</p></div>
       <div class="agrow" data-b="4"><i>04</i><p>Trust</p></div>
-      <div class="agrow" data-b="5"><i>05</i><p>Investment</p></div>
+      <div class="agrow" data-b="5"><i>05</i><p>Rollout</p></div>
     </div>
   </div>
 </section>
@@ -74,12 +74,10 @@
     <p class="lead" style="margin-bottom:18px">Today, at every agency submitting to your review:</p>
     <div class="pslist">
       <div class="psrow" data-b="1"><i>1</i><p>Every submission is built and rebuilt by hand.</p></div>
-      <div class="psrow" data-b="2"><i>2</i><p>New formats cause ambiguity and friction.</p></div>
-      <div class="psrow" data-b="3"><i>3</i><p>Annotating and changing assets can take days, if not weeks.</p></div>
-      <div class="psrow" data-b="4"><i>4</i><p>The people reviewing, annotating, and creating all share different knowledge bases.</p></div>
-      <div class="psrow" data-b="5"><i>5</i><p>Differing areas of feedback lead to conflicting adjustments to the submission.</p></div>
-      <div class="psrow" data-b="6"><i>6</i><p>Changes are re-typed into Veeva manually.</p></div>
-      <div class="psrow" data-b="7"><i>7</i><p>Resubmissions trigger all of the issues above.</p></div>
+      <div class="psrow" data-b="2"><i>2</i><p>New formats cause ambiguity: nobody is sure what a submission needs.</p></div>
+      <div class="psrow" data-b="3"><i>3</i><p>Annotating and changing assets takes days, sometimes weeks.</p></div>
+      <div class="psrow" data-b="4"><i>4</i><p>Everyone works from a different knowledge base, so feedback conflicts.</p></div>
+      <div class="psrow" data-b="5"><i>5</i><p>Changes are re-typed into Veeva, and every resubmission starts over.</p></div>
     </div>
   </div>
 </section>
@@ -92,32 +90,18 @@
     <div class="pslist sg">
       <div class="psrow" data-b="1"><i>1</i><p>Redline builds the submission from the agency's assets.</p></div>
       <div class="psrow" data-b="2"><i>2</i><p>Requirements are known before you build.</p></div>
-      <div class="psrow" data-b="3"><i>3</i><p>Annotations arrive drafted, changes arrive staged.</p></div>
-      <div class="psrow" data-b="4"><i>4</i><p>Everyone works from one knowledge base.</p></div>
-      <div class="psrow" data-b="5"><i>5</i><p>Every piece of feedback lands in one worklist, conflicts surfaced.</p></div>
-      <div class="psrow" data-b="6"><i>6</i><p>The Veeva package is ready to paste.</p></div>
-      <div class="psrow" data-b="7"><i>7</i><p>Fewer rounds. Shorter rounds.</p></div>
+      <div class="psrow" data-b="3"><i>3</i><p>Annotations arrive drafted. Changes arrive staged.</p></div>
+      <div class="psrow" data-b="4"><i>4</i><p>One knowledge base, one worklist, conflicts surfaced.</p></div>
+      <div class="psrow" data-b="5"><i>5</i><p>The package is Veeva-ready. Fewer rounds, shorter rounds.</p></div>
     </div>
   </div>
 </section>
 
-<!-- 5 · Three jobs -->
-<section class="ds" data-sec="Redline">
-  <div class="inner wide">
-    <p class="kick">03 · Redline</p>
-    <h2 style="font-size:44px">Clearing PRC, in 3 buckets</h2>
-    <div class="jobs nocard">
-      <div class="job" data-b="1"><i><svg class="ic"><use href="#i-layers"/></svg></i><b>The submission</b><p>Deck, annotations, and paperwork, built from your assets.</p></div>
-      <div class="job" data-b="2"><i><svg class="ic"><use href="#i-book"/></svg></i><b>The review</b><p>Read the way your committee will, before it goes in.</p></div>
-      <div class="job" data-b="3"><i><svg class="ic"><use href="#i-inbox"/></svg></i><b>The round</b><p>Every comment tracked, answered, and closed out.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 6 · What Redline is -->
+<!-- 5 · What Redline is -->
 <section class="ds" data-sec="Redline">
   <div class="inner split">
     <div class="stext">
+      <p class="kick">03 · Redline</p>
       <h2 style="font-size:29px">Runs the submission workflow, with human approval before Veeva.</h2>
       <p class="lead">Assets, context, and review history go in. Annotated decks, drafted responses, and coordinated rounds come out. Inside the tools your teams already use.</p>
       <div class="caps">
@@ -187,8 +171,8 @@
   </div>
 </section>
 
-<!-- 7 · Guided intake, one window animating through four steps -->
-<section class="ds" data-sec="Redline">
+<!-- 7 · Guided intake, arrow-keyed through four steps -->
+<section class="ds" data-sec="Redline" data-steps="4">
   <span class="chap">01 · The submission</span>
   <div class="inner split">
     <div class="stext">
@@ -247,30 +231,30 @@
               <div class="gipane p2">
                 <div class="gicard">
                   <div class="gicardhead"><b>The asset</b><span>Brand, part number, concept or final. Typed once.</span></div>
-                  <div class="sfld" style="margin-top:12px"><label>Brand</label><span data-type="HIV prevention" data-tdelay="6600" data-tdur="450"></span></div>
-                  <div class="sfld" style="margin-top:8px"><label>Part number</label><span data-type="US-UNBC-4289" data-tdelay="7300" data-tdur="650"></span></div>
-                  <div class="seg" style="margin-top:8px"><span>Concept</span><span class="onn" style="animation-delay:8.5s">Final</span></div>
-                  <div class="sfld" style="margin-top:8px"><label>Round</label><span data-type="Round 1" data-tdelay="8800" data-tdur="350"></span></div>
+                  <div class="sfld" style="margin-top:12px"><label>Brand</label><span data-type="HIV prevention" data-tstep="2" data-tdelay="400" data-tdur="450"></span></div>
+                  <div class="sfld" style="margin-top:8px"><label>Part number</label><span data-type="US-UNBC-4289" data-tstep="2" data-tdelay="1200" data-tdur="650"></span></div>
+                  <div class="seg" style="margin-top:8px"><span>Concept</span><span class="onn" style="animation-delay:2.4s">Final</span></div>
+                  <div class="sfld" style="margin-top:8px"><label>Round</label><span data-type="Round 1" data-tstep="2" data-tdelay="2700" data-tdur="350"></span></div>
                 </div>
               </div>
               <div class="gipane p3">
                 <div class="gicard">
                   <div class="gicardhead"><b>What explains it</b><span>The kickoff call is context, not a memory.</span></div>
-                  <div class="ctxread gf" style="animation-delay:11s"><svg class="icl" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><div><b>Creative brief</b><small>Claims and intent, sourced</small></div><span class="chip chip-green sm">Linked</span></div>
-                  <div class="ctxread gf" style="animation-delay:11.7s"><svg class="icl" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg><div><b>Kickoff transcript</b><small>What the client actually asked for</small></div><span class="chip chip-green sm">Linked</span></div>
-                  <div class="ctxread gf" style="animation-delay:12.4s"><svg class="icl" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><div><b>Prior round · PRC comments</b><small>What was flagged last time</small></div><span class="chip chip-green sm">Linked</span></div>
+                  <div class="ctxread gf" style="animation-delay:.5s"><svg class="icl" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><div><b>Creative brief</b><small>Claims and intent, sourced</small></div><span class="chip chip-green sm">Linked</span></div>
+                  <div class="ctxread gf" style="animation-delay:1.1s"><svg class="icl" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg><div><b>Kickoff transcript</b><small>What the client actually asked for</small></div><span class="chip chip-green sm">Linked</span></div>
+                  <div class="ctxread gf" style="animation-delay:1.7s"><svg class="icl" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><div><b>Prior round · PRC comments</b><small>What was flagged last time</small></div><span class="chip chip-green sm">Linked</span></div>
                 </div>
               </div>
               <div class="gipane p4">
                 <div class="gicard">
                   <div class="gicardhead"><b>Here's what this format needs</b><span>Flyer · from your submission history and encoded standards</span></div>
-                  <div class="gireq gf" style="animation-delay:15.4s"><svg class="icl"><use href="#i-lcheck"/></svg><p>Claims and fair balance presented together, same panel</p></div>
-                  <div class="gireq gf" style="animation-delay:15.9s"><svg class="icl"><use href="#i-lcheck"/></svg><p>Full ISI on the reverse, referenced on the front</p></div>
-                  <div class="gireq gf" style="animation-delay:16.4s"><svg class="icl"><use href="#i-lcheck"/></svg><p>Distribution channel and audience stated on the submission</p></div>
-                  <div class="gidate gf" style="animation-delay:17s"><label>Submit by</label><b>Tue, Aug 11 · 12:00</b></div>
-                  <div class="gidate gf" style="animation-delay:17.4s"><label>PRC review</label><b>Thu, Aug 13</b></div>
-                  <div class="gidate gf" style="animation-delay:17.8s"><label>Launch</label><span class="chip chip-yellow sm" style="margin-left:auto">4 days after review</span><b>Mon, Aug 17</b></div>
-                  <div class="gireqfoot gf" style="animation-delay:18.4s"><span>The whole path to launch, before the build starts.</span><span class="cbtn grn">Build</span></div>
+                  <div class="gireq gf" style="animation-delay:.4s"><svg class="icl"><use href="#i-lcheck"/></svg><p>Claims and fair balance presented together, same panel</p></div>
+                  <div class="gireq gf" style="animation-delay:.85s"><svg class="icl"><use href="#i-lcheck"/></svg><p>Full ISI on the reverse, referenced on the front</p></div>
+                  <div class="gireq gf" style="animation-delay:1.3s"><svg class="icl"><use href="#i-lcheck"/></svg><p>Distribution channel and audience stated on the submission</p></div>
+                  <div class="gidate gf" style="animation-delay:1.8s"><label>Submit by</label><b>Tue, Aug 11 · 12:00</b></div>
+                  <div class="gidate gf" style="animation-delay:2.15s"><label>PRC review</label><b>Thu, Aug 13</b></div>
+                  <div class="gidate gf" style="animation-delay:2.5s"><label>Launch</label><span class="chip chip-yellow sm" style="margin-left:auto">4 days after review</span><b>Mon, Aug 17</b></div>
+                  <div class="gireqfoot gf" style="animation-delay:3s"><span>The whole path to launch, before the build starts.</span><span class="cbtn grn">Build</span></div>
                 </div>
               </div>
             </div>
@@ -379,7 +363,7 @@
       <p class="lead">Before you submit: likely flags, missed annotations, and a summary.</p>
     </div>
     <div class="sright">
-      <div class="crop" style="width:960px">
+      <div class="crop" id="src-preread" style="width:960px">
         <div class="cropbar"><span></span><span></span><span></span><em>Redline · US-UNBC-001 · Round 2</em></div>
         <div class="app slim">
         <nav class="appnav">
@@ -618,7 +602,7 @@
       <p class="lead" style="margin-top:12px">Every item gets an owner, a complexity, and an area.</p>
     </div>
     <div class="sright">
-      <div class="crop" style="width:1000px">
+      <div class="crop" id="src-worklist" style="width:1000px">
         <div class="cropbar"><span></span><span></span><span></span><em>Redline · US-UNBC-001 · Round 2</em></div>
         <div class="app slim">
         <nav class="appnav">
@@ -730,13 +714,93 @@
         </div>
         </div></div>
       </div>
-      <p class="whis">One click each, or the whole set in one pass.</p>
+      <p class="whis"><b style="color:var(--ink-soft)">The judgment stays. The middleware goes.</b></p>
       <div class="tagrow"><span class="mtag">Underlying capability demonstrated on Feed</span></div>
     </div>
   </div>
 </section>
 
-<!-- 12 · Sources + what they become -->
+<!-- 13 · One round, start to close (simplify v2, rebuilt from follow-the-sun) -->
+<section class="ds" data-sec="Redline">
+  <span class="chap">03 · The round</span>
+  <div class="inner wide">
+    <h2>One round, start to close.</h2>
+    <div class="looprow">
+      <div class="loopnode" data-b="1"><i>1</i><b>Comments land</b><span>Straight from the committee</span></div>
+      <span class="looparr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+      <div class="loopnode" data-b="2"><i>2</i><b>Become a worklist</b><span>Every item owned</span></div>
+      <span class="looparr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+      <div class="loopnode" data-b="3"><i>3</i><b>The work gets done</b><span>Agency or pod</span></div>
+      <span class="looparr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+      <div class="loopnode" data-b="4"><i>4</i><b>A staged queue</b><span>Every change diffed against its request</span></div>
+      <span class="looparr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+      <div class="loopnode" data-b="5"><i>5</i><b>A named human approves</b><span>Then, and only then, it moves</span></div>
+    </div>
+    <div class="loopback" data-b="6"><em>the next round</em></div>
+    <p class="declland" data-b="7">Every round runs the same loop. Each one gets shorter.</p>
+  </div>
+</section>
+
+<!-- 14 · Prepare. Review. Approve. (simplify v2, rebuilt from two halves) -->
+<section class="ds" data-sec="Redline">
+  <div class="inner wide">
+    <h2 style="font-size:40px">Prepare. Review. Approve.</h2>
+    <div class="tseats" style="margin-top:30px">
+      <div class="tseat" data-b="1">
+        <div class="tseathead"><b>Prepare</b><span>Redline</span></div>
+        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Builds the submission</p></div>
+        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Checks it against your standards</p></div>
+        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Stages every change</p></div>
+      </div>
+      <div class="tseat" data-b="2">
+        <div class="tseathead"><b>Review</b><span>The committee, in Veeva</span></div>
+        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Routing and review, exactly as today</p></div>
+        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Rounds live here</p></div>
+        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>The committee's tools, unchanged</p></div>
+      </div>
+      <div class="tseat" data-b="3">
+        <div class="tseathead"><b>Approve</b><span>People</span></div>
+        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>The agency signs what ships under its name</p></div>
+        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Gilead holds the gate</p></div>
+        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>A person submits</p></div>
+      </div>
+    </div>
+    <p class="declland" data-b="4">Redline owns preparation. The committee owns review. People own approval.</p>
+  </div>
+</section>
+
+<!-- 15 · Three seats. One pipeline. (simplified) -->
+<section class="ds" data-sec="Redline">
+  <div class="inner wide">
+    <h2 style="font-size:40px">Three seats. One pipeline.</h2>
+    <p class="lead" data-b="1" style="max-width:920px">PRC now runs across agencies, internal teams, and offshore pods. Redline is built for exactly that shape.</p>
+    <div class="tseats">
+      <div class="tseat" data-b="2">
+        <div class="tseathead"><b>Agency</b></div>
+        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Creates and responds</p></div>
+        <p class="tsbound">Never sees another agency's work.</p>
+      </div>
+      <div class="tseat" data-b="3">
+        <div class="tseathead"><b>Vendor pod</b></div>
+        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Submission mechanics, inside an assigned workspace</p></div>
+        <p class="tsbound">No export. Nothing outside scope.</p>
+      </div>
+      <div class="tseat" data-b="4">
+        <div class="tseathead"><b>Gilead</b></div>
+        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Standards, status, the gate</p></div>
+        <p class="tsbound">Sees everything. Keeps the knowledge.</p>
+      </div>
+    </div>
+    <div class="tsmech" data-b="5">
+      <span>Standards flow down</span>
+      <span>Work flows up</span>
+      <span>Nothing is copied</span>
+    </div>
+    <p class="declland" data-b="6" style="margin-top:12px">Agencies keep their craft. Vendors get clean work. Gilead gets one pipeline and keeps the knowledge.</p>
+  </div>
+</section>
+
+<!-- 16 · Sources + what they become -->
 <section class="ds" data-sec="Redline">
   <div class="inner wide">
     <h2 style="font-size:38px">Integrated in what you already use</h2>
@@ -757,106 +821,18 @@
         <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Validated requirements, confirmed by your team</p></div>
         <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Committee review patterns, encoded as standards</p></div>
         <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Approved-language precedents, ready to reuse</p></div>
-        <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Easy-to-edit storyboard frames and illustrated assets</p></div>
-        <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Action items for creatives</p></div>
         <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Conflicts surfaced for your call</p></div>
       </div>
     </div>
-    <p class="srcfoot">Drive and Slides stay where work lives. Veeva remains the system of record. Only approved folders are indexed. Nothing becomes a rule without a human validating it.</p>
+    <p class="srcfoot">Veeva remains the system of record. Nothing becomes a rule without a human validating it.</p>
   </div>
 </section>
 
-<!-- 12a · Three seats. One pipeline. (Gilead centerpiece, v8) -->
-<section class="ds" data-sec="Redline">
-  <div class="inner wide">
-    <h2 style="font-size:40px">Three seats. One pipeline.</h2>
-    <p class="lead" data-b="1">Everyone works in Redline. Nobody gets a copy.</p>
-    <div class="tseats">
-      <div class="tseat" data-b="2">
-        <div class="tseathead"><b>Agency</b><span>Majority, and every agency like them</span></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Sees only their submissions and their own client knowledge base</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Creates the work, uploads assets and context, drafts creative intent</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Responds to every round</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Approves what ships under their name</p></div>
-        <p class="tsbound">Never sees another agency's work.</p>
-      </div>
-      <div class="tseat" data-b="3">
-        <div class="tseathead"><b>Vendor pod</b><span>CPC pods, wherever they sit</span></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Scoped, revocable, time-boxed access into an assigned agency workspace</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Submission mechanics: assembly, formatting, linking</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Reference docs and Veeva prep</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>QC before anything reaches the gate</p></div>
-        <p class="tsbound">No export. No reassignment. Nothing outside scope.</p>
-      </div>
-      <div class="tseat" data-b="4">
-        <div class="tseathead"><b>Gilead</b><span>CPC leadership, brand teams, committees</span></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Sees everything, portfolio-wide</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Sets the standards and the guidance</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Status, review, and the calendar</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Holds the approval gate</p></div>
-        <p class="tsbound">Owns the standard. Keeps the knowledge.</p>
-      </div>
-    </div>
-    <div class="tsmech" data-b="5">
-      <span>Standards flow down, live, instantly</span>
-      <span>Work flows up into one console</span>
-      <span>Assignment, never duplication</span>
-      <span>Every action carries a name and a time</span>
-      <span>A named human approves before Veeva</span>
-      <span>Veeva stays the system of record</span>
-    </div>
-    <p class="declland" data-b="6" style="margin-top:12px">Agencies keep their craft. Vendors get clean work. Gilead gets one pipeline and keeps the knowledge.</p>
-  </div>
-</section>
-
-<!-- 12a2 · Follow the sun (new, v8) -->
-<section class="ds" data-sec="Redline">
-  <span class="chap">03 · The round</span>
-  <div class="inner">
-    <h2>Overnight work you can trust in the morning.</h2>
-    <div class="ftsflow">
-      <div class="ftstep" data-b="1"><i>1</i><div><b>Committee comments land</b><span>End of your day. Start of the pod's.</span></div></div>
-      <div class="ftstep" data-b="2"><i>2</i><div><b>Redline turns them into an owned worklist</b><span>Every item scoped, matched to its slide, assigned</span></div></div>
-      <div class="ftstep" data-b="3"><i>3</i><div><b>The pod works the mechanical items overnight</b><span>Formatting, linking, references, Veeva prep</span></div></div>
-      <div class="ftstep" data-b="4"><i>4</i><div><b>Morning: a staged queue, nothing applied</b><span>Every change diffed against its request, each choice citing its precedent</span></div></div>
-      <div class="ftstep" data-b="5"><i>5</i><div><b>The agency lead approves, kicks back, or escalates</b><span>Item by item, with the diff in front of them</span></div></div>
-    </div>
-    <p class="declland" data-b="6">Follow-the-sun only works if the morning handoff is trustworthy.</p>
-  </div>
-</section>
-
-<!-- 12b · Redline + Veeva, two halves (Gilead) -->
-<section class="ds" data-sec="Redline">
-  <div class="inner wide">
-    <h2 style="font-size:40px">Review and preparation are two halves.</h2>
-    <div class="falv">
-      <div class="falside" data-b="1">
-        <h5 class="pu">Preparation · Redline</h5>
-        <p class="falbig">Everything before the committee sees it.</p>
-        <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Builds the submission from the agency's assets</p></div>
-        <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Checks it against your encoded standards</p></div>
-        <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Reconciles every round of feedback</p></div>
-        <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Hands review a clean, complete package</p></div>
-      </div>
-      <div class="falseam" data-b="2"><i></i><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg><i></i></div>
-      <div class="falside" data-b="3">
-        <h5 class="sg">Review · Veeva</h5>
-        <p class="falbig">Everything the committee already runs.</p>
-        <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Routing, review, and approval where they live today</p></div>
-        <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>The committee's tools, unchanged</p></div>
-        <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>The system of record stays the system of record</p></div>
-        <div class="becomerow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Fewer rounds spent on what preparation should have caught</p></div>
-      </div>
-    </div>
-    <p class="declland" data-b="4">Cleaner submissions in, faster reviews out. Everything downstream works better, including Veeva.</p>
-  </div>
-</section>
-
-<!-- 13 · Calendar + inbox -->
+<!-- 17 · Calendar + inbox -->
 <section class="ds" data-sec="Redline">
   <span class="chap">03 · The round</span>
   <div class="inner wide">
-    <h2 style="font-size:36px;margin-bottom:10px">Communicates and receives information where you do.</h2>
+    <h2 style="font-size:36px;margin-bottom:10px">Communicates where you do.</h2>
     <div class="calmail">
       <div class="window" data-b="1" style="width:620px">
         <div class="winbar"><span></span><span></span><span></span><em class="winapp"><img src="assets/logos/gcal.png" alt="">Google Calendar</em></div>
@@ -977,114 +953,171 @@
   </div>
 </section>
 
-<!-- 14b · Built for how PRC works now (CPC, v8) -->
-<section class="ds" data-sec="Redline">
-  <div class="inner">
-    <h2 style="font-size:40px">Built for how PRC works now.</h2>
-    <p class="lead" style="max-width:960px">CPC has run this for two-plus years: brands moved into pilots to gauge efficiencies, submission work shifted to pods offshore for cost and follow-the-sun coverage. Redline is built for exactly that shape.</p>
-    <p data-b="1" style="margin-top:14px"><span class="chip chip-yellow">TODO: confirm what CPC stands for — never guess in the room</span></p>
-    <div class="crclist">
-      <div class="becomerow" data-b="2"><svg class="icl"><use href="#i-lcheck"/></svg><p>Clean, standardized inputs going in.</p></div>
-      <div class="becomerow" data-b="3"><svg class="icl"><use href="#i-lcheck"/></svg><p>Portfolio visibility and audit coming back.</p></div>
-      <div class="becomerow" data-b="4"><svg class="icl"><use href="#i-lcheck"/></svg><p>Institutional knowledge encoded in the system, not in people.</p></div>
-    </div>
-    <p class="declland" data-b="5">Your knowledge stays yours. Pods can change; the system remembers.</p>
-  </div>
-</section>
-
-<!-- 15 · What stays human -->
-<section class="ds" data-sec="Redline">
-  <div class="inner">
-    <h2 style="font-size:44px">Redline drafts. Your people decide.</h2>
-    <div class="decl2">
-      <table class="dtable rl" data-b="1">
-        <thead><tr><th><span>Redline</span></th></tr></thead>
-        <tbody>
-          <tr><td>Builds the deck</td></tr>
-          <tr><td>Drafts every annotation</td></tr>
-          <tr><td>Drafts every response</td></tr>
-          <tr><td>Checks every fix</td></tr>
-          <tr><td>Remembers every round</td></tr>
-        </tbody>
-      </table>
-      <table class="dtable mj" data-b="2">
-        <thead><tr><th><span>Your people</span></th></tr></thead>
-        <tbody>
-          <tr><td>Agencies make the creative calls</td></tr>
-          <tr><td>The committee makes every judgment call</td></tr>
-          <tr><td>A named human signs off before anything reaches Veeva</td></tr>
-          <tr><td>Gilead owns the standards</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="declland" data-b="3">Nothing ships without a named human's sign-off.</p>
-  </div>
-</section>
-
-<!-- 25 · Personas -->
-<section class="ds" data-sec="Redline">
-  <div class="inner wide">
-    <h2 style="font-size:40px">One pipeline, every seat</h2>
-    <div class="seatline">
-      <div class="seatzones four">
-        <div class="seatzone" data-b="1"><i>Agency teams</i><b>Own the craft</b><p>Create, submit, and respond with their own tools, in their own workspace.</p></div>
-        <div class="seatzone" data-b="2"><i>The committee</i><b>Owns the judgment</b><p>Receives cleaner submissions, in the format it already reviews.</p></div>
-        <div class="seatzone" data-b="3"><i>CPC</i><b>Owns the standard</b><p>Updates guidance once. Live at every agency instantly, with portfolio audit.</p></div>
-        <div class="seatzone" data-b="4"><i>Brand marketing</i><b>Owns the outcome</b><p>Status across every agency without chasing a single status email.</p></div>
-      </div>
-    </div>
-    <p class="seatfoot" data-b="5">Same people, one way of working.</p>
-  </div>
-</section>
-
-<!-- 25b · The account lead's day (v8 §7) -->
-<section class="ds" data-sec="Redline">
-  <div class="inner">
-    <h2 style="font-size:36px">The account lead's day, without the middleware.</h2>
-    <p class="lead" style="margin-bottom:6px">Everything below is from watching one account lead run one Veeva round.</p>
-    <div class="ndlist">
-      <div class="ndrow" data-b="1"><p class="was">The precedent lives in memory — part 4189, hunted by hand</p><span class="ndarr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span><p class="now">Part-number search, with the precedent attached</p></div>
-      <div class="ndrow" data-b="2"><p class="was">Data source → market slice → PDF → part number → link → sticky, all by hand</p><span class="ndarr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span><p class="now">The reference pipeline runs itself and anchors the sticky</p></div>
-      <div class="ndrow" data-b="3"><p class="was">Veeva stickies written from scratch, one at a time</p><span class="ndarr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span><p class="now">Stickies arrive drafted, Veeva-ready — a human approves</p></div>
-      <div class="ndrow" data-b="4"><p class="was">Is this a derivative? What does it need? Ask around</p><span class="ndarr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span><p class="now">Classified at intake, requirements answered up front</p></div>
-      <div class="ndrow" data-b="5"><p class="was">Submission windows tracked in heads and hallways</p><span class="ndarr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span><p class="now">The calendar owns the windows and the cutoffs</p></div>
-      <div class="ndrow" data-b="6"><p class="was">The morning huddle carries the status</p><span class="ndarr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span><p class="now">The worklist carries it, with owners and states</p></div>
-      <div class="ndrow" data-b="7"><p class="was">Knowledge walks out with staff</p><span class="ndarr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span><p class="now">The workspace remembers, through every turnover</p></div>
-    </div>
-    <p class="declland" data-b="8">The judgment stays. The middleware goes.</p>
-  </div>
-</section>
-
-<!-- T1 · Where your data lives (Gilead) -->
+<!-- 19 · Where your data lives (merged with AWS diagram, simplify v2) -->
 <section class="ds" data-sec="Trust">
   <div class="inner wide">
     <p class="kick">04 · Trust</p>
     <h2 style="font-size:40px">Where your data lives.</h2>
-    <div class="t1wrap">
-      <div class="peri" data-b="1">
-        <div class="perilab">Gilead perimeter · your AWS account, your approved model endpoints</div>
-        <div class="periin">
-          <div class="peribox"><b>Redline</b><small>Runs entirely inside</small></div>
-          <div class="peribox"><b>Knowledge bases</b><small>Isolated per agency</small></div>
-          <div class="peribox"><b>Audit trail</b><small>Every action on the record</small></div>
+    <div class="awsrow" data-b="1">
+      <div class="awsperi">
+        <div class="perilab">Gilead perimeter · your AWS account · no public internet path</div>
+        <div class="awsflow">
+          <div class="awsnode"><b>Agency workspaces</b><small>Isolated per agency</small></div>
+          <span class="awsarr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+          <div class="awsnode"><b>Redline</b><small>Runs entirely inside</small></div>
+          <span class="awsarr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+          <div class="awsnode hi"><b>Bedrock · PrivateLink</b><small>Zero retention, zero training</small></div>
+          <span class="awsarr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+          <div class="awsnode"><b>Staged output</b><small>A named human approves</small></div>
+        </div>
+      </div>
+      <span class="awsarr out"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+      <div class="awsnode veeva"><b>Veeva</b><small>System of record. A person submits.</small></div>
+    </div>
+    <div class="msaannlist two" data-b="2">
+      <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Runs in your AWS account. Nothing else.</b></div>
+      <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Models run inside — Bedrock over PrivateLink, or your own GPUs. Zero&nbsp;retention,&nbsp;zero&nbsp;training.</b></div>
+      <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Premium editing: your tenant, or an endpoint you've approved. One audited door out; everything else is network-denied.</b></div>
+      <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Workspaces isolated per agency. No cross-client retrieval, ever.</b></div>
+      <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Every user is a named identity. Every action on the record.</b></div>
+      <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Admins inspect, export, or delete anything, any time.</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 20 · How the AI stays honest (Gilead) -->
+<section class="ds" data-sec="Trust">
+  <div class="inner wide">
+    <h2 style="font-size:40px">How the AI stays honest.</h2>
+    <div class="t2wrap">
+      <div class="window" data-b="1" style="width:600px">
+        <div class="winbar"><span></span><span></span><span></span><em>Redline · Suggested changes</em></div>
+        <div class="gclist" style="padding:20px 22px;border:0;box-shadow:none">
+          <div class="gcrows t2rows">
+            <div class="gcrow cur"><div class="gck"><b>✓</b><p>Hold the ISI 4 seconds on scroll</p></div><div class="gcrowmeta"><span class="chip chip-purple sm">Likely flag</span><span class="chip chip-nt sm">Encoded standard · Regulatory</span></div><div class="gcsrc"><b>Source · Portfolio standard</b>"Interactive formats hold the ISI 4 seconds on scroll." Updated by CPC.</div></div>
+            <div class="gcrow"><div class="gck"><b>✓</b><p>Decimal formatting corrected, three instances</p></div><div class="gcrowmeta"><span class="chip chip-green sm">Confirmed</span><span class="chip chip-nt sm">PRC round 3 · sticky 14</span></div></div>
+            <div class="gcrow ask"><div class="gck"><b>?</b><p>New interactive format · no precedent found</p></div><div class="gcrowmeta"><span class="chip chip-yellow sm">Needs a human</span><span class="chip chip-nt sm">Routed for review</span></div></div>
+          </div>
         </div>
       </div>
       <div class="msaannlist" data-b="2">
-        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Runs in your AWS account</b><small>Your tenancy, your approved model endpoints, nothing else.</small></div>
-        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Isolated workspaces, per-workspace knowledge bases</b><small>No cross-client retrieval. Agencies never see each other's work.</small></div>
-        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Vendor access is scoped, revocable, time-boxed</b><small>Into one assigned workspace. Nothing outside it.</small></div>
-        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Every user is a unique identity, every action on the record</b></div>
-        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Your data never trains a shared model</b></div>
-        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>One audited door out</b><small>The media egress broker. Everything else is network-denied.</small></div>
-        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Admins inspect, export, or delete anything, any time</b></div>
+        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Every suggestion carries its source — a standard, a sticky, a transcript.</b></div>
+        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Confidence is stated: likely flag, confirmed, or needs a human.</b></div>
+        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>When it doesn't know, it flags. It never invents.</b></div>
+        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>A named human sits between the AI and anything that moves.</b></div>
+      </div>
+    </div>
+    <p class="declland" data-b="3" style="font-size:20px;margin-top:24px">Before go-live, CPC defines what passing looks like. Redline is verified against live submissions.</p>
+  </div>
+</section>
+
+<!-- 21 · AI is a dial (rebuilt, simplify v2) -->
+<section class="ds" data-sec="Trust">
+  <div class="inner wide">
+    <h2 style="font-size:40px">AI is a dial, not a default.</h2>
+    <div class="dialgrid">
+      <div class="dialcol" data-b="1">
+        <div class="dthumb"><div class="dthumbin" data-clone="src-worklist"></div></div>
+        <b>Management</b>
+        <p>Structures, tracks, and files. People write everything.</p>
+      </div>
+      <div class="dialcol" data-b="2">
+        <div class="dthumb"><div class="dthumbin" data-clone="src-preread"></div></div>
+        <b>Reviewing</b>
+        <p>Reads and flags before it goes in. People approve every line.</p>
+      </div>
+      <div class="dialcol" data-b="3">
+        <div class="dthumb"><div class="dthumbin" data-clone="src-deck"></div></div>
+        <b>Building</b>
+        <p>Builds the deck and stages the changes. A named human approves the result.</p>
+      </div>
+    </div>
+    <p class="declland" data-b="4">You set the level. Nothing skips approval.</p>
+  </div>
+</section>
+
+<!-- 22 · Rollout (merged with calibration, simplify v2) -->
+<section class="ds" data-sec="Rollout">
+  <div class="inner wide">
+    <p class="kick">05 · Rollout</p>
+    <h2 style="font-size:44px">Rollout</h2>
+    <div class="tline">
+      <div class="tlrail"></div>
+      <div class="tlseg" data-b="1"><span class="tldot"></span><em>Weeks 1&ndash;8</em><b>Phase 1 · Implementation</b><p>Calibration on live submissions. Your team runs acceptance.</p></div>
+      <div class="tlseg" data-b="2"><span class="tldot"></span><em>From week 9</em><b>Phase 2 · The standard</b><p>All franchise submissions run through the pipeline.</p></div>
+      <div class="tlseg" data-b="3"><span class="tldot"></span><em>As you grow</em><b>Phase 3 · The portfolio</b><p>New franchises and agencies onboard onto the same standards.</p></div>
+    </div>
+    <div class="incstrip nocard" data-b="4">
+      <b>No agency goes live uncalibrated</b>
+      <div class="inclist">
+        <span>Audit · calibrate · go live</span>
+        <span>The first agency's audit informs every one after it</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- T1a · Three layers (v8 §4) -->
-<section class="ds" data-sec="Trust">
+<!-- 23 · What each seat gets (morphed from personas + layer includes) -->
+<section class="ds" data-sec="Rollout">
   <div class="inner wide">
+    <h2 style="font-size:40px">What each seat gets.</h2>
+    <div class="sgets">
+      <div class="sgrow head"><i></i><span>What it's for</span><span>How it connects</span></div>
+      <div class="sgrow" data-b="1"><i>Agencies</i><p>Their own calibrated workspace and knowledge base</p><p>Submit into one pipeline, keep their craft</p></div>
+      <div class="sgrow" data-b="2"><i>CPC</i><p>The standards engine and the console</p><p>Updates guidance once — live everywhere, full audit</p></div>
+      <div class="sgrow" data-b="3"><i>The committee</i><p>Cleaner, complete submissions</p><p>Reviews in Veeva, exactly as today</p></div>
+      <div class="sgrow" data-b="4"><i>Brand marketing</i><p>Status across every agency</p><p>Without chasing a single email</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 24 · Next steps -->
+<section class="ds" data-sec="Rollout">
+  <div class="inner">
+    <h2 style="font-size:44px">Next steps</h2>
+    <div class="ftsflow" style="margin-top:26px">
+      <div class="ftstep" data-b="1"><i>1</i><div><b>A security review</b><span>One door out, the model layers, the full AWS picture — the appendix is built for that call</span></div></div>
+      <div class="ftstep" data-b="2"><i>2</i><div><b>A CPC working session</b><span>How the pods run today sets the first calibration</span></div></div>
+      <div class="ftstep" data-b="3"><i>3</i><div><b>Name the launch agency</b><span>Audit, calibrate, go live</span></div></div>
+      <div class="ftstep" data-b="4"><i>4</i><div><b>Scope and pricing</b><span>Separately, once the shape is agreed</span></div></div>
+    </div>
+    <p class="declland" data-b="5">Thank you.</p>
+  </div>
+</section>
+
+<!-- 25 · optional · The account lead's day, compressed (Nikki call) -->
+<section class="ds" data-sec="Rollout">
+  <div class="inner">
+    <h2 style="font-size:36px">The account lead's day, without the middleware.</h2>
+    <p class="lead">From watching one account lead run one Veeva round.</p>
+    <div class="ndlist">
+      <div class="ndrow" data-b="1"><p class="was">The part-number hunt, by hand</p><span class="ndarr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span><p class="now">Search, with the precedent attached</p></div>
+      <div class="ndrow" data-b="2"><p class="was">Stickies written from scratch, one at a time</p><span class="ndarr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span><p class="now">Stickies arrive drafted. A human approves.</p></div>
+      <div class="ndrow" data-b="3"><p class="was">Knowledge walks out with staff</p><span class="ndarr"><svg class="icl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span><p class="now">The workspace remembers</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- A1 · appendix · Media egress broker -->
+<section class="ds" data-sec="Appendix">
+  <div class="inner">
+    <p class="kick">Appendix · for the security call</p>
+    <h2 style="font-size:40px">One door out.</h2>
+    <p class="lead" style="max-width:940px">When an edit uses the approved external endpoint, the media egress broker is the only path. Here is everything it enforces, on every request.</p>
+    <div class="msaannlist" style="margin-top:20px;max-width:1040px">
+      <div class="msaann" data-b="1"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Payload minimization</b><small>The mask region plus padding, never the whole asset. Flattened raster, EXIF and XMP stripped, no layers, no filenames.</small></div>
+      <div class="msaann" data-b="2"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Context stripping</b><small>Pixels and a short instruction only. Never PRC comments, reviewer identities, claims language, part numbers, brand or product names.</small></div>
+      <div class="msaann" data-b="3"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Outbound DLP</b><small>OCR runs before egress. If ISI, claims, or identifiers appear in the crop, it doesn't leave.</small></div>
+      <div class="msaann" data-b="4"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Ephemeral by construction</b><small>Per-request credentials, in-memory only, nothing at rest.</small></div>
+      <div class="msaann" data-b="5"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Audited end to end</b><small>Requester, asset, region, endpoint, ZDR flag, timestamp, input and output hashes.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- A2 · appendix · Three layers -->
+<section class="ds" data-sec="Appendix">
+  <div class="inner wide">
+    <p class="kick">Appendix · for the security call</p>
     <h2 style="font-size:40px">How the models run. Three layers.</h2>
     <div class="lyrgrid">
       <div class="lyr" data-b="1">
@@ -1099,7 +1132,7 @@
       </div>
       <div class="lyr" data-b="3">
         <div class="lyrhead"><em>Layer 3</em><b>The media egress broker</b></div>
-        <p>The only component permitted to reach an external endpoint. Everything else is network-denied. Next slide, in full.</p>
+        <p>The only component permitted to reach an external endpoint. Everything else is network-denied. Previous slide, in full.</p>
         <p class="lyrbound">One door out, audited.</p>
       </div>
     </div>
@@ -1108,24 +1141,10 @@
   </div>
 </section>
 
-<!-- T1a2 · Media egress broker (v8 §4) -->
-<section class="ds" data-sec="Trust">
-  <div class="inner">
-    <h2 style="font-size:40px">One door out.</h2>
-    <p class="lead" style="max-width:940px">When an edit uses the approved external endpoint, the media egress broker is the only path. Here is everything it enforces, on every request.</p>
-    <div class="msaannlist" style="margin-top:20px;max-width:1040px">
-      <div class="msaann" data-b="1"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Payload minimization</b><small>The mask region plus padding, never the whole asset. Flattened raster, EXIF and XMP stripped, no layers, no filenames.</small></div>
-      <div class="msaann" data-b="2"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Context stripping</b><small>Pixels and a short instruction only. Never PRC comments, reviewer identities, claims language, part numbers, brand or product names.</small></div>
-      <div class="msaann" data-b="3"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Outbound DLP</b><small>OCR runs before egress. If ISI, claims, or identifiers appear in the crop, it doesn't leave.</small></div>
-      <div class="msaann" data-b="4"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Ephemeral by construction</b><small>Per-request credentials, in-memory only, nothing at rest.</small></div>
-      <div class="msaann" data-b="5"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Audited end to end</b><small>Requester, asset, region, endpoint, ZDR flag, timestamp, input and output hashes.</small></div>
-    </div>
-  </div>
-</section>
-
-<!-- T1b · How the AI runs inside AWS (Gilead) -->
-<section class="ds" data-sec="Trust">
+<!-- A3 · appendix · How the AI runs inside AWS, in full -->
+<section class="ds" data-sec="Appendix">
   <div class="inner wide">
+    <p class="kick">Appendix · for the security call</p>
     <h2 style="font-size:40px">How the AI runs, inside AWS.</h2>
     <div class="awsrow">
       <div class="awsperi" data-b="1">
@@ -1153,149 +1172,9 @@
   </div>
 </section>
 
-<!-- T2 · How the AI stays honest (Gilead) -->
-<section class="ds" data-sec="Trust">
-  <div class="inner wide">
-    <h2 style="font-size:40px">How the AI stays honest.</h2>
-    <div class="t2wrap">
-      <div class="window" data-b="1" style="width:600px">
-        <div class="winbar"><span></span><span></span><span></span><em>Redline · Suggested changes</em></div>
-        <div class="gclist" style="padding:20px 22px;border:0;box-shadow:none">
-          <div class="gcrows t2rows">
-            <div class="gcrow cur"><div class="gck"><b>✓</b><p>Hold the ISI 4 seconds on scroll</p></div><div class="gcrowmeta"><span class="chip chip-purple sm">Likely flag</span><span class="chip chip-nt sm">Encoded standard · Regulatory</span></div><div class="gcsrc"><b>Source · Portfolio standard</b>"Interactive formats hold the ISI 4 seconds on scroll." Updated by CPC.</div></div>
-            <div class="gcrow"><div class="gck"><b>✓</b><p>Decimal formatting corrected, three instances</p></div><div class="gcrowmeta"><span class="chip chip-green sm">Confirmed</span><span class="chip chip-nt sm">PRC round 3 · sticky 14</span></div></div>
-            <div class="gcrow ask"><div class="gck"><b>?</b><p>New interactive format · no precedent found</p></div><div class="gcrowmeta"><span class="chip chip-yellow sm">Needs a human</span><span class="chip chip-nt sm">Routed for review</span></div></div>
-          </div>
-        </div>
-      </div>
-      <div class="msaannlist" data-b="2">
-        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Every suggestion carries its source</b><small>A standard, a sticky, a transcript. Nothing is a black box.</small></div>
-        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Confidence is stated, never implied</b><small>Likely flag, confirmed, or needs a human.</small></div>
-        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>When it doesn't know, it flags. It never invents.</b><small>A day-one design requirement, not a patch.</small></div>
-        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Staged approvals</b><small>A named human sits between the AI and anything that moves.</small></div>
-        <div class="msaann"><u><svg class="icl"><use href="#i-lcheck"/></svg></u><b>Acceptance testing</b><small>Your team defines what passing looks like, and runs the tests.</small></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- T3 · AI is a dial (Gilead) -->
-<section class="ds" data-sec="Trust">
-  <div class="inner wide">
-    <h2 style="font-size:40px">AI is a dial, not a default.</h2>
-    <div class="jobs nocard" style="margin-top:34px">
-      <div class="job" data-b="1"><i><svg class="ic"><use href="#i-grid"/></svg></i><b>Management</b><p>Redline structures, tracks, and files. People write everything.</p></div>
-      <div class="job" data-b="2"><i><svg class="ic"><use href="#i-book"/></svg></i><b>Reviewing</b><p>Redline reads, flags, and drafts. People approve every line before it moves.</p></div>
-      <div class="job" data-b="3"><i><svg class="ic"><use href="#i-layers"/></svg></i><b>Editing</b><p>Redline edits storyboard frames and illustrated assets, staged. A named human approves the result.</p></div>
-    </div>
-    <p class="declland" data-b="4">Use as much AI as you want. The workflow works at every setting.</p>
-  </div>
-</section>
-
-<!-- 29 · Rollout (Gilead) -->
-<section class="ds" data-sec="Investment">
-  <div class="inner wide">
-    <p class="kick">05 · Investment</p>
-    <h2 style="font-size:44px">Rollout</h2>
-    <div class="tline">
-      <div class="tlrail"></div>
-      <div class="tlseg" data-b="1"><span class="tldot"></span><em>Weeks 1&ndash;8</em><b>Phase 1 · Implementation</b><p>Calibration on live submissions. Your team runs acceptance.</p></div>
-      <div class="tlseg" data-b="2"><span class="tldot"></span><em>From week 9</em><b>Phase 2 · The standard</b><p>The CPC standard goes live. All franchise submissions run through the pipeline.</p></div>
-      <div class="tlseg" data-b="3"><span class="tldot"></span><em>As you grow</em><b>Phase 3 · The portfolio</b><p>Additional franchises and agencies onboard onto the same encoded standards.</p></div>
-    </div>
-    <div class="incstrip nocard" data-b="4">
-      <b>What Gilead walks away with</b>
-      <div class="inclist">
-        <span>One pipeline</span>
-        <span>Encoded standards</span>
-        <span>Portfolio audit</span>
-        <span>Agencies that submit clean</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 29b · Calibration before go-live (v8 audit item 4) -->
-<section class="ds" data-sec="Investment">
-  <div class="inner">
-    <h2 style="font-size:40px">No agency goes live uncalibrated.</h2>
-    <p class="lead" style="max-width:940px">Every agency runs PRC differently — completely different planets. So every workspace is audited and calibrated before it goes live.</p>
-    <div class="ftsflow" style="margin-top:20px">
-      <div class="ftstep" data-b="1"><i>1</i><div><b>Audit</b><span>How this agency actually runs PRC today: formats, rounds, references, handoffs</span></div></div>
-      <div class="ftstep" data-b="2"><i>2</i><div><b>Calibrate</b><span>The workspace tuned to their formats and their history, against the CPC standard</span></div></div>
-      <div class="ftstep" data-b="3"><i>3</i><div><b>Acceptance</b><span>Their team runs the tests, on live submissions</span></div></div>
-      <div class="ftstep" data-b="4"><i>4</i><div><b>Go live</b><span>Into the standardized pipeline, with the standard already encoded</span></div></div>
-    </div>
-    <p class="declland" data-b="5">One agency goes live first. Its audit informs every agency after it.</p>
-  </div>
-</section>
-
-<!-- 29c0 · What each layer includes (v8 audit item 5, no prices) -->
-<section class="ds" data-sec="Investment">
-  <div class="inner wide">
-    <h2 style="font-size:40px">What each layer includes.</h2>
-    <div class="tseats" style="margin-top:26px">
-      <div class="tseat" data-b="1">
-        <div class="tseathead"><b>Platform &amp; console</b><span>Gilead-wide, one of it</span></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Portfolio dashboard: every agency, every submission, one view</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Standards engine — updated once, live at every agency</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Calendar, review windows, and the approval gate</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Managed operations and model ops</p></div>
-      </div>
-      <div class="tseat" data-b="2">
-        <div class="tseathead"><b>Agency workspace</b><span>One per agency, isolated</span></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Guided intake and the deck studio</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Their own client knowledge base, nobody else's</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Worklist, rounds, and drafted responses</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Calibrated to their formats and their history</p></div>
-      </div>
-      <div class="tseat" data-b="3">
-        <div class="tseathead"><b>Vendor workspace</b><span>For CPC pods, when applicable</span></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Scoped access into assigned agency workspaces</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Submission mechanics: assembly, formatting, linking, Veeva prep</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Heavier governance: time-boxed, revocable, no export</p></div>
-        <div class="tsrow"><svg class="icl"><use href="#i-lcheck"/></svg><p>Action-level audit on everything they touch</p></div>
-      </div>
-    </div>
-    <p class="whis" data-b="4">The companion to the next slide. What each line buys, before any line has a number.</p>
-  </div>
-</section>
-
-<!-- 29c · Investment (Gilead, v8 §6 · year one only) -->
-<section class="ds" data-sec="Investment">
-  <div class="inner wide">
-    <p class="kick">05 · Investment</p>
-    <h2 style="font-size:44px">Investment · year one</h2>
-    <div class="invled">
-      <div class="invrow" data-b="1"><div><b>Build &amp; calibration</b><span>Six months · Majority as launch agency, included</span></div><em>$700K <i>one-time</i></em></div>
-      <div class="invrow" data-b="2"><div><b>Platform license</b><span>Gilead console, standards engine, knowledge base, managed operations, model ops</span></div><em>$500K <i>/ yr</i></em></div>
-      <div class="invrow" data-b="3"><div><b>Agency workspace</b><span>Isolated environment, client knowledge base, calibration</span></div><em>$100K <i>/ yr each</i></em></div>
-      <div class="invrow" data-b="4"><div><b>Vendor workspace</b><span>Scoped cross-agency ops access, heavier governance and audit</span></div><em>$150K <i>/ yr when applicable</i></em></div>
-      <div class="invrow total" data-b="5"><div><b>Year one, four agencies</b></div><em>~$1.5M</em></div>
-    </div>
-    <div class="invmaj" data-b="6"><b>Majority</b><span>Onboarding · $100K</span><span>Launch-agency credit · ($100K)</span><span class="chip chip-green sm">Included</span></div>
-    <div class="incstrip nocard" data-b="7">
-      <b>Expansion, as you grow</b>
-      <div class="inclist">
-        <span>Additional agency · $100K/yr · ~$85K at 7+ · ~$70K at 13+</span>
-        <span>Additional franchise or portfolio · +$300K/yr</span>
-        <span>Custom integrations · $100&ndash;250K</span>
-        <span>In-environment premium model deployment · scoped separately</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 21 · Thank you -->
-<section class="ds" data-sec="Investment">
-  <div class="inner cover">
-    <h2 style="font-size:64px">Thank you</h2>
-  </div>
-</section>
-
 <div class="dots" id="dots"></div>
 <div class="pageno" id="pageno"></div>
 </div>
-<script src="deck.js?v=16"></script>
+<script src="deck.js?v=17"></script>
 </body>
 </html>
