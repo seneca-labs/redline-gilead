@@ -1129,9 +1129,6 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .sfld{display:flex;flex-direction:column;gap:3px;border:1px solid var(--hairline-2);border-radius:10px;padding:8px 12px;background:var(--surface)}
 .sfld label{font-size:11.5px;font-weight:700;color:var(--faint)}
 .sfld span{font-size:15px;font-weight:700;color:var(--ink-soft);min-height:19px}
-.seg{display:flex;border:1px solid var(--hairline-2);border-radius:999px;padding:3px;background:var(--surface)}
-.seg span{flex:1;text-align:center;font-size:12.5px;font-weight:700;color:var(--ink-4);border-radius:999px;padding:5px 0}
-.seg span.onn{background:var(--ink);color:var(--surface)}
 .fchip{display:flex;align-items:center;font-size:11px;font-weight:700;color:var(--ink-2);border:1px solid var(--hairline-2);border-radius:999px;padding:6px 12px;background:var(--surface);width:fit-content}
 .gfile{display:flex;align-items:center;gap:9px;border:1px solid var(--hairline-2);border-radius:10px;padding:9px 12px;background:var(--surface);margin-top:8px}
 .gfile .icl{width:15px;height:15px;color:var(--ink-4);flex-shrink:0}
@@ -1140,7 +1137,6 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 /* one pass, 4.5s per step, fields fill in as it goes, holds on the requirements card */
 .gf{opacity:0}
 .ds.on .gf{animation:giFill .45s cubic-bezier(.22,1,.36,1) both}
-.ds.on .seg .onn{animation:giSeg .4s ease both}
 /* arrow-keyed intake: substep classes s2/s3/s4 set by deck.js on the section */
 .ds.on:not(.s2) .gistep.g1,
 .ds.on.s2:not(.s3) .gistep.g2,
@@ -1155,18 +1151,17 @@ h2{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-
 .ds.on.s2:not(.s3) .gipane.p2,
 .ds.on.s3:not(.s4) .gipane.p3,
 .ds.on.s4 .gipane.p4{opacity:1}
-.ds.on .gipane .gf,.ds.on .gipane .seg .onn{animation:none}
+.ds.on .gipane .gf{animation:none}
 .ds.on:not(.s2) .gipane.p1 .gf{animation:giFill .45s cubic-bezier(.22,1,.36,1) both}
 .ds.on:not(.s2) .ttile.hit{animation:giHit .6s ease 3.3s both}
-.ds.on.s2 .gipane.p2 .seg .onn{animation:giSeg .4s ease both}
+.ds.on.s2 .gipane.p2 .gf,
 .ds.on.s3 .gipane.p3 .gf,
 .ds.on.s4 .gipane.p4 .gf{animation:giFill .45s cubic-bezier(.22,1,.36,1) both}
 @keyframes giAns{from{opacity:0;max-height:0;margin-top:0;transform:translateY(3px)}to{opacity:1;max-height:54px;margin-top:5px;transform:none}}
 @keyframes giFill{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
 @keyframes giHit{0%{transform:scale(1);background:var(--surface);border-color:var(--hairline-2)}50%{transform:scale(1.09)}100%{transform:scale(1);background:var(--pill-sage-bg);border-color:var(--pill-sage-tx)}}
-@keyframes giSeg{from{background:transparent;color:var(--ink-4)}to{background:var(--ink);color:var(--surface)}}
 @media (prefers-reduced-motion:reduce){
-  .gistep,.gipane,.gistep small,.gistep .chip,.gf,.seg .onn,.ttile.hit{animation:none!important}
+  .gistep,.gipane,.gistep small,.gistep .chip,.gf,.ttile.hit{animation:none!important}
   .gistep small,.gistep .chip{opacity:1;max-height:none;overflow:visible}
   .gistep small{margin-top:2px}
   .gistep .chip{margin-top:6px}

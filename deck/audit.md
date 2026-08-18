@@ -555,3 +555,20 @@ Governing rule: painfully easy to read — one headline, one supporting line, th
 | Speaker notes | Full rewrite for 28 sections; CPC background + mandate path under slide 15; follow-the-sun script under slide 13; intake note rewritten for arrow-keyed pacing (~19s autoplay language removed); appendix marked "don't present in the main meeting"; CPC TODO now speaker-notes-only |
 
 Verified via substep-aware headless probe (28/28 slides, steps=4 on intake, nav chapters contiguous, no end overrun, zero console/page/HTTP errors) + reduced-motion screenshots of all 28 sections including intake s1–s4; slide 19 recaptured after the wrap fix.
+
+## gilead-v10 · Nikki feedback round 2 (2026-08-18)
+
+Cal's directives: intake should flow what-you're-submitting → context → details (requirements and dates, not concept/round) → summary+build; slide 13 confused pre-submission with post-review; box text unclear; slide 14 Approve column mixed actors; slide 25 should cover every stakeholder, not just the agency; 26/27/28 too wordy for a non-technical room. Plus v9.1 rides along (no em dashes, round detected not asked, dropzone rename).
+
+| Slide | Change |
+|---|---|
+| 6 intake | Steps reordered: 1 asset (single full-width dropzone, ctx zone removed), 2 what explains it (ctx dropzone + 3 linked docs moved here), 3 the details (brand + part number side by side, then requirements + dates; concept/final seg and round field deleted), 4 ready to build (4-line summary + Build). Rail rewritten to match. Typed fields moved to data-tstep=3. |
+| 13 | Lead added: "A round starts when the committee sends comments back." Nodes rewritten plainly: comments come back / each becomes a task / the changes get made / each change is checked / a person approves. Loopback: "back to the committee". |
+| 14 | Approve column now one actor (your people): named sign-off, Redline never submits on its own, final gate stays with Gilead. |
+| 25 | Rebuilt as 5 per-seat benefit rows (account lead, committee, creative team, brand marketing, CPC); title "Everyone's day gets easier." |
+| 26 | Jargon stripped (EXIF/XMP, DLP, OCR, ZDR): five plain promises about the one guarded door. |
+| 27 | Layers renamed plainly (inside your environment / a model you've approved / the one guarded door); vendor jargon moved to speaker notes; TODO chip reworded as an ask for the call. |
+| 28 | Title "The AI lives inside your own cloud"; IAM/SSO, S3/KMS, PrivateLink, CloudTrail moved to speaker notes; nodes and facts in plain language. |
+| CSS | .gipane.p2 .gf gate added; dead .seg/.onn intake rules + giSeg keyframe removed; cache-bust v=23. |
+
+Verification: probe-v9 (substep-aware) full pass + reduced-motion captures of changed slides reviewed.
